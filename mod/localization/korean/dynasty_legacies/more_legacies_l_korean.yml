@@ -1,0 +1,94 @@
+﻿l_korean:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_name: "기사도"
+bld_chivalry_legacy_track_desc: "복종, 명예, 그리고 고귀한 전사 정신"
+bld_chivalry_legacy_1_name: "낭만적인"
+bld_chivalry_legacy_2_name: "용감한"
+bld_chivalry_legacy_3_name: "시적인"
+bld_chivalry_legacy_4_name: "용맹한"
+bld_chivalry_legacy_5_name: "영웅적인"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "헌신"
+bld_devotion_legacy_track_desc: "독실함, 경건함, 그리고 성지의 보살핌"
+bld_devotion_legacy_1_name: "지당한"
+bld_devotion_legacy_2_name: "공경하는"
+bld_devotion_legacy_3_name: "축성된"
+bld_devotion_legacy_4_name: "확고한"
+bld_devotion_legacy_5_name: "열정적인"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "지배"
+bld_dominance_legacy_track_desc: "힘, 권력, 그리고 약자에 대한 지배"
+bld_dominance_legacy_1_name: "무자비한"
+bld_dominance_legacy_2_name: "억압적인"
+bld_dominance_legacy_3_name: "어두운 소문의"
+bld_dominance_legacy_4_name: "위협하는"
+bld_dominance_legacy_5_name: "잔혹한"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "산업"
+bld_industry_legacy_track_desc: "진보, 혁신, 그리고 새로운 것을 향한 끝없는 발돋움"
+bld_industry_legacy_1_name: "성실히 노력하는"
+bld_industry_legacy_2_name: "지속적으로 개선하는"
+bld_industry_legacy_3_name: "언제나 학습하는"
+bld_industry_legacy_4_name: "세심한"
+bld_industry_legacy_5_name: "인내하는"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "영향력"
+bld_influence_legacy_track_desc: "비밀, 허점, 그리고 미묘하지만 부인할 수 없는 통제"
+bld_influence_legacy_1_name: "권력의 원천이 되는"
+bld_influence_legacy_2_name: "영악한"
+bld_influence_legacy_3_name: "교활한"
+bld_influence_legacy_4_name: "인기있는 가면의"
+bld_influence_legacy_5_name: "신뢰할 수 있는"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "상업"
+bld_mercantile_legacy_track_desc: "거래, 제안, 그리고 금과 인맥"
+bld_mercantile_legacy_1_name: "국제적인"
+bld_mercantile_legacy_2_name: "장인들의"
+bld_mercantile_legacy_3_name: "보호받는"
+bld_mercantile_legacy_4_name: "투자받는"
+bld_mercantile_legacy_5_name: "인정받은"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "항해"
+bld_seafaring_legacy_track_desc: "항해, 바다, 그리고 연결된 세계"
+bld_seafaring_legacy_1_name: "멀미따윈 없는"
+bld_seafaring_legacy_2_name: "익숙한"
+bld_seafaring_legacy_3_name: "바닷바람이 불어오는"
+bld_seafaring_legacy_4_name: "해사법을 따르는"
+bld_seafaring_legacy_5_name: "풍요로운 바다의"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "유혹"
+bld_temptation_legacy_track_desc: "욕망, 사랑, 그리고 삶의 더 아름다운 것들"
+bld_temptation_legacy_1_name: "보람있는"
+bld_temptation_legacy_2_name: "안락한"
+bld_temptation_legacy_3_name: "추파를 던지는"
+bld_temptation_legacy_4_name: "세련된"
+bld_temptation_legacy_5_name: "달콤한 타락의"
+max_seduce_schemes_add: "최대 유혹 모략"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "전통"
+bld_tradition_legacy_track_desc: "관습, 의식, 그리고 집안의 강건함"
+bld_tradition_legacy_1_name: "지속되는"
+bld_tradition_legacy_2_name: "통일된"
+bld_tradition_legacy_3_name: "관례적인"
+bld_tradition_legacy_4_name: "유사한"
+bld_tradition_legacy_5_name: "저명한"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "주술"
+bld_witchcraft_legacy_track_desc: "오컬트, 신비, 생명의 신비 그 자체"
+bld_witchcraft_legacy_1_name: "불경한"
+bld_witchcraft_legacy_2_name: "입문하는"
+bld_witchcraft_legacy_3_name: "연구하는"
+bld_witchcraft_legacy_4_name: "초자연적인"
+bld_witchcraft_legacy_5_name: "사악한 신비주의의"
+max_convert_to_witchcraft_schemes_add: "최대 마술 개종 계략"
+convert_to_witchcraft_scheme_phase_duration_add: "마술 개종 단계 기간"

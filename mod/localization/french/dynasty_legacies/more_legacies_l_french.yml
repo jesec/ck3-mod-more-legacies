@@ -1,0 +1,94 @@
+﻿l_french:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "Obéissance, honneur et esprit guerrier noble"
+bld_chivalry_legacy_1_name: "Romantique"
+bld_chivalry_legacy_2_name: "Vaillant"
+bld_chivalry_legacy_3_name: "Poétique"
+bld_chivalry_legacy_4_name: "Galant"
+bld_chivalry_legacy_5_name: "Héroïque"
+bld_chivalry_legacy_track_name: "Chevalerie"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "Dévotion"
+bld_devotion_legacy_track_desc: "Piété, déférence et entretien des lieux saints"
+bld_devotion_legacy_1_name: "Juste"
+bld_devotion_legacy_2_name: "Vénérer"
+bld_devotion_legacy_3_name: "Sanctifier"
+bld_devotion_legacy_4_name: "Inébranlable"
+bld_devotion_legacy_5_name: "Ardent"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "Domination"
+bld_dominance_legacy_track_desc: "Pouvoir, puissance et domination sur les faibles"
+bld_dominance_legacy_1_name: "Impitoyable"
+bld_dominance_legacy_2_name: "Oppressif"
+bld_dominance_legacy_3_name: "Sombres Rumeurs"
+bld_dominance_legacy_4_name: "Intimidant"
+bld_dominance_legacy_5_name: "Brutal"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "Industrie"
+bld_industry_legacy_track_desc: "Progrès, innovation et avancée perpétuelle vers le nouveau"
+bld_industry_legacy_1_name: "Efforts Sincères"
+bld_industry_legacy_2_name: "Toujours en Amélioration"
+bld_industry_legacy_3_name: "Toujours Apprenant"
+bld_industry_legacy_4_name: "Méticuleux"
+bld_industry_legacy_5_name: "Persévérance"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "Influence"
+bld_influence_legacy_track_desc: "Secrets, failles et contrôle subtil mais indéniable"
+bld_influence_legacy_1_name: "Dynamiques de Pouvoir"
+bld_influence_legacy_2_name: "Astucieux"
+bld_influence_legacy_3_name: "Rusé"
+bld_influence_legacy_4_name: "Persona Populaire"
+bld_influence_legacy_5_name: "Digne de Confiance"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "Marchand"
+bld_mercantile_legacy_track_desc: "Le commerce offre à la fois or et connexions"
+bld_mercantile_legacy_1_name: "Commerce International"
+bld_mercantile_legacy_2_name: "Artisans"
+bld_mercantile_legacy_3_name: "Routes Gardées"
+bld_mercantile_legacy_4_name: "Investisseurs"
+bld_mercantile_legacy_5_name: "Routes Établies"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "Navigation"
+bld_seafaring_legacy_track_desc: "Naviguer sur les vastes mers permet de se connecter avec le monde entier"
+bld_seafaring_legacy_1_name: "Jambes Marines"
+bld_seafaring_legacy_2_name: "Bien Voyagé"
+bld_seafaring_legacy_3_name: "Brises Marines"
+bld_seafaring_legacy_4_name: "Droit Maritime"
+bld_seafaring_legacy_5_name: "Mers Abondantes"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "Tentation"
+bld_temptation_legacy_track_desc: "Luxure, amour et les plaisirs de la vie"
+bld_temptation_legacy_1_name: "Labeurs Féconds"
+bld_temptation_legacy_2_name: "Conforts du Foyer"
+bld_temptation_legacy_3_name: "Flirt Prolifique"
+bld_temptation_legacy_4_name: "Goûts Raffinés"
+bld_temptation_legacy_5_name: "Douce Corruption"
+max_seduce_schemes_add: "Stratagèmes de Séduction Max"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "Tradition"
+bld_tradition_legacy_track_desc: "Les coutumes et rituels inflexibles soutiennent la force d'une maison"
+bld_tradition_legacy_1_name: "Durable"
+bld_tradition_legacy_2_name: "Front Uni"
+bld_tradition_legacy_3_name: "Coutumier"
+bld_tradition_legacy_4_name: "Esprit Similaire"
+bld_tradition_legacy_5_name: "Établi"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "Sorcellerie"
+bld_witchcraft_legacy_track_desc: "L'occulte, l'arcane et les mystères de la vie elle-même"
+bld_witchcraft_legacy_1_name: "Rites Profanes"
+bld_witchcraft_legacy_2_name: "Initiation"
+bld_witchcraft_legacy_3_name: "Études Sorcières"
+bld_witchcraft_legacy_4_name: "Aura Surnaturelle"
+bld_witchcraft_legacy_5_name: "Mysticisme Sombre"
+max_convert_to_witchcraft_schemes_add: "Stratagèmes de Conversion à la Sorcellerie Max"
+convert_to_witchcraft_scheme_phase_duration_add: "Durée de Phase de Conversion à la Sorcellerie"

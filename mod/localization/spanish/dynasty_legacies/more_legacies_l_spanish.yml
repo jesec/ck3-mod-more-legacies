@@ -1,0 +1,94 @@
+﻿l_spanish:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_name: "Caballerosidad"
+bld_chivalry_legacy_track_desc: "Obediencia, honor y un noble espíritu guerrero"
+bld_chivalry_legacy_1_name: "Románticos"
+bld_chivalry_legacy_2_name: "Valientes"
+bld_chivalry_legacy_3_name: "Poetas"
+bld_chivalry_legacy_4_name: "Gallardos"
+bld_chivalry_legacy_5_name: "Heróicos"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "Devoción"
+bld_devotion_legacy_track_desc: "Piedad, sumisión y el cuidado de los lugares sagrados"
+bld_devotion_legacy_1_name: "Justos"
+bld_devotion_legacy_2_name: "Venerables"
+bld_devotion_legacy_3_name: "Santificados"
+bld_devotion_legacy_4_name: "Inquebrantables"
+bld_devotion_legacy_5_name: "Píos"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "Dominación"
+bld_dominance_legacy_track_desc: "Poder, fuerza y dominio sobre los débiles"
+bld_dominance_legacy_1_name: "Despiadados"
+bld_dominance_legacy_2_name: "Opresión"
+bld_dominance_legacy_3_name: "Rumores oscuros"
+bld_dominance_legacy_4_name: "Intimidación"
+bld_dominance_legacy_5_name: "Brutalidad"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "Industria"
+bld_industry_legacy_track_desc: "El progreso, la innovación y el avance incesante hacia lo nuevo"
+bld_industry_legacy_1_name: "Esfuerzos sinceros"
+bld_industry_legacy_2_name: "Cada vez mejor"
+bld_industry_legacy_3_name: "Siempre aprendiendo"
+bld_industry_legacy_4_name: "Meticulosos"
+bld_industry_legacy_5_name: "Perseverantes"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "Influencia"
+bld_influence_legacy_track_desc: "Secretos, vacíos legales y un control sutil pero innegable"
+bld_influence_legacy_1_name: "Dinámicas de poder"
+bld_influence_legacy_2_name: "Astucia"
+bld_influence_legacy_3_name: "Picardía"
+bld_influence_legacy_4_name: "Personalidad popular"
+bld_influence_legacy_5_name: "De confianza"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "Marcantilismo"
+bld_mercantile_legacy_track_desc: "Los acuerdos comerciales nos ofrecen tanto dinero como conexiones"
+bld_mercantile_legacy_1_name: "Comercio internacional"
+bld_mercantile_legacy_2_name: "Artesanos"
+bld_mercantile_legacy_3_name: "Caminos resguardados"
+bld_mercantile_legacy_4_name: "Inversionistas"
+bld_mercantile_legacy_5_name: "Rutas establecidas"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "Marineros"
+bld_seafaring_legacy_track_desc: "Navegar por los vastos mares es estar conectado con todo el mundo"
+bld_seafaring_legacy_1_name: "Pie de marinero"
+bld_seafaring_legacy_2_name: "Bienaventurados"
+bld_seafaring_legacy_3_name: "Brisas del mar"
+bld_seafaring_legacy_4_name: "Ley marítima"
+bld_seafaring_legacy_5_name: "Mares provechosos"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "Tentación"
+bld_temptation_legacy_track_desc: "La lujuria, el amor y las cosas buenas de la vida"
+bld_temptation_legacy_1_name: "Trabajos fructíferos"
+bld_temptation_legacy_2_name: "Comodidades del hogar"
+bld_temptation_legacy_3_name: "Coqueteo prolífico"
+bld_temptation_legacy_4_name: "Gustos refinados"
+bld_temptation_legacy_5_name: "Corrupción dulce"
+max_seduce_schemes_add: "Conjuras de seducción máximas"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "Tradición"
+bld_tradition_legacy_track_desc: "Las costumbres y los rituales inflexibles sostienen la fuerza de una casa"
+bld_tradition_legacy_1_name: "Perdurables"
+bld_tradition_legacy_2_name: "Frente unificado"
+bld_tradition_legacy_3_name: "Costumbres"
+bld_tradition_legacy_4_name: "Personas afines"
+bld_tradition_legacy_5_name: "Establecidos"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "Brujería"
+bld_witchcraft_legacy_track_desc: "Lo oculto, lo arcano y los misterios de la vida misma"
+bld_witchcraft_legacy_1_name: "Ritos profanos"
+bld_witchcraft_legacy_2_name: "Iniciación"
+bld_witchcraft_legacy_3_name: "Estudios de hechicería"
+bld_witchcraft_legacy_4_name: "Aura de otro mundo"
+bld_witchcraft_legacy_5_name: "Misticismo oscuro"
+max_convert_to_witchcraft_schemes_add: "Máx. Intrigas de Conversión a Brujería"
+convert_to_witchcraft_scheme_phase_duration_add: "Duración de Fase de Conversión a Brujería"

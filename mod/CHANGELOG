@@ -1,0 +1,42 @@
+v2.0
+Updated for CK3 1.18.* compatibility.
+Bundled legacy track artwork from "More Legacies Art +" (https://steamcommunity.com/sharedfiles/filedetails/?id=2977838440).
+All 10 legacy tracks now include custom icons and illustrations.
+Fixed typo: "Prolofic Flirt" → "Prolific Flirt" in English, French, and Russian localizations.
+Fixed incorrect modifier keys in German, Spanish, Korean, and Chinese localizations.
+Added Japanese and Polish localization support (complete translations).
+All 9 supported game languages now have complete, proper translations.
+Removed deprecated commented code (~300 lines of House Traditions remnants from v1.2-v1.4).
+Code cleanup and optimization.
+Note: For scrollable legacy display GUI, use the companion mod "Scrollable Legacies".
+
+v1.10
+Updated scheme modifiers for the scheme rework.
+
+v1.9
+Added Chinese localization thanks to Marcus.
+
+v1.8
+Added Korean localization thanks to WKML.
+
+v1.7
+Added English localization placeholders for other languages: French, Korean, Russian, and Chinese.
+
+v1.6
+Added German localization thanks to positief161.
+
+v1.5
+Added the bld (bravelildragon) prefix to all legacies for compatibility purposes.
+
+v1.4
+Removed the ability for House Traditions to determine legacy availability to make it a separate patch and clean up the error logs for people not using House Traditions.
+Fixed the designation of the following traditions to make legacies available as intended: Performative Honour, Family Business, Expert Artisans, Dexterous Fishermen, Seafarers, Linguists, Recognition of Talent.
+
+v1.3
+Added Spanish localization thanks to Kordi. Updated for v1.7.1.
+
+v1.2
+Removed the AI choosing legacies based on their House Traditions. Hopefully this improves stability.
+
+v1.1
+Added localization for the Temptation - Sweet Corruption and Witchcraft - Initiation perks

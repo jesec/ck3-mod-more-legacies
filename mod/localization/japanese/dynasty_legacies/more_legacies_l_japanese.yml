@@ -1,0 +1,94 @@
+﻿l_japanese:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "服従、名誉、そして高貴な戦士の精神"
+bld_chivalry_legacy_1_name: "ロマンチック"
+bld_chivalry_legacy_2_name: "勇敢"
+bld_chivalry_legacy_3_name: "詩的"
+bld_chivalry_legacy_4_name: "勇猛"
+bld_chivalry_legacy_5_name: "英雄的"
+bld_chivalry_legacy_track_name: "騎士道"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "献身"
+bld_devotion_legacy_track_desc: "敬虔、崇敬、そして聖地の守護"
+bld_devotion_legacy_1_name: "正義"
+bld_devotion_legacy_2_name: "崇拝"
+bld_devotion_legacy_3_name: "神聖化"
+bld_devotion_legacy_4_name: "不動"
+bld_devotion_legacy_5_name: "熱烈"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "支配"
+bld_dominance_legacy_track_desc: "力、権力、そして弱者への支配"
+bld_dominance_legacy_1_name: "冷酷"
+bld_dominance_legacy_2_name: "圧制"
+bld_dominance_legacy_3_name: "暗い噂"
+bld_dominance_legacy_4_name: "威嚇"
+bld_dominance_legacy_5_name: "残忍"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "勤勉"
+bld_industry_legacy_track_desc: "進歩、革新、そして新しいものへの終わりなき前進"
+bld_industry_legacy_1_name: "真摯な努力"
+bld_industry_legacy_2_name: "常に改善"
+bld_industry_legacy_3_name: "常に学習"
+bld_industry_legacy_4_name: "綿密"
+bld_industry_legacy_5_name: "忍耐"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "影響力"
+bld_influence_legacy_track_desc: "秘密、抜け穴、そして微妙だが否定できない支配"
+bld_influence_legacy_1_name: "権力の力学"
+bld_influence_legacy_2_name: "鋭敏"
+bld_influence_legacy_3_name: "狡猾"
+bld_influence_legacy_4_name: "人気者"
+bld_influence_legacy_5_name: "信頼できる"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "商業"
+bld_mercantile_legacy_track_desc: "交易は金と人脈の両方をもたらす"
+bld_mercantile_legacy_1_name: "国際貿易"
+bld_mercantile_legacy_2_name: "職人"
+bld_mercantile_legacy_3_name: "守られた道"
+bld_mercantile_legacy_4_name: "投資家"
+bld_mercantile_legacy_5_name: "確立された航路"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "航海"
+bld_seafaring_legacy_track_desc: "広大な海を航海することは全世界と繋がることである"
+bld_seafaring_legacy_1_name: "海の足"
+bld_seafaring_legacy_2_name: "熟練航海士"
+bld_seafaring_legacy_3_name: "海風"
+bld_seafaring_legacy_4_name: "海事法"
+bld_seafaring_legacy_5_name: "豊かな海"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "誘惑"
+bld_temptation_legacy_track_desc: "欲望、愛、そして人生の美しいもの"
+bld_temptation_legacy_1_name: "実り多き労働"
+bld_temptation_legacy_2_name: "家庭の快適さ"
+bld_temptation_legacy_3_name: "多産な浮気者"
+bld_temptation_legacy_4_name: "洗練された趣味"
+bld_temptation_legacy_5_name: "甘い堕落"
+max_seduce_schemes_add: "最大誘惑計略"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "伝統"
+bld_tradition_legacy_track_desc: "不屈の慣習と儀式が家の力を支える"
+bld_tradition_legacy_1_name: "持続的"
+bld_tradition_legacy_2_name: "統一戦線"
+bld_tradition_legacy_3_name: "慣習的"
+bld_tradition_legacy_4_name: "同志"
+bld_tradition_legacy_5_name: "確立された"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "魔術"
+bld_witchcraft_legacy_track_desc: "オカルト、秘術、そして生命そのものの神秘"
+bld_witchcraft_legacy_1_name: "不敬な儀式"
+bld_witchcraft_legacy_2_name: "入門"
+bld_witchcraft_legacy_3_name: "魔術研究"
+bld_witchcraft_legacy_4_name: "異世界のオーラ"
+bld_witchcraft_legacy_5_name: "暗黒神秘主義"
+max_convert_to_witchcraft_schemes_add: "最大魔術改宗計略"
+convert_to_witchcraft_scheme_phase_duration_add: "魔術改宗段階期間"

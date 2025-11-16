@@ -1,0 +1,592 @@
+# CHIVALRY LEGACIES
+
+bld_chivalry_legacy_1 = { # Romantic
+	legacy = bld_chivalry_legacy_track
+
+	character_modifier = {
+		attraction_opinion = 10
+		courting_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_chivalry_legacy_2 = { # Valiant
+	legacy = bld_chivalry_legacy_track
+
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.1
+		knight_effectiveness_mult = 0.15
+	}
+}
+
+bld_chivalry_legacy_3 = { # Poetic
+	legacy = bld_chivalry_legacy_track
+
+	character_modifier = {
+		courtier_and_guest_opinion = 10
+		court_grandeur_baseline_add = 5
+		monthly_court_grandeur_change_mult = 0.5
+		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	}
+}
+
+bld_chivalry_legacy_4 = { # Gallant
+	legacy = bld_chivalry_legacy_track
+
+	character_modifier = {
+		knight_limit = 1
+		monthly_prestige_gain_per_knight_add = 0.2
+		monthly_piety_gain_per_knight_add = 0.2
+	}
+}
+
+bld_chivalry_legacy_5 = { # Heroic
+	legacy = bld_chivalry_legacy_track
+
+	character_modifier = {
+		diplomacy_per_prestige_level = 1
+		prowess_per_prestige_level = 1
+	}
+}
+
+# DEVOTION LEGACIES
+
+bld_devotion_legacy_1 = { # Righteous
+	legacy = bld_devotion_legacy_track
+
+	character_modifier = {
+		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05
+		tolerance_advantage_mod = 5
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_devotion_legacy_2 = { # Venerate
+	legacy = bld_devotion_legacy_track
+
+	character_modifier = {
+		domain_tax_same_faith_mult = 0.15
+	}
+}
+
+bld_devotion_legacy_3 = { # Sanctify
+	legacy = bld_devotion_legacy_track
+
+	character_modifier = {
+		church_holding_build_speed = -0.1
+		church_holding_build_gold_cost = -0.1
+		church_holding_holding_build_speed = -0.1
+		church_holding_holding_build_gold_cost = -0.1
+	}
+}
+
+bld_devotion_legacy_4 = { # Unwavering
+	legacy = bld_devotion_legacy_track
+
+	character_modifier = {
+		holy_order_hire_cost_mult = -0.2
+		monthly_piety_gain_per_knight_mult = 0.01
+	}
+}
+
+bld_devotion_legacy_5 = { # Ardent
+	legacy = bld_devotion_legacy_track
+
+	character_modifier = {
+		learning_per_piety_level = 1
+		levy_reinforcement_rate_same_faith = 0.1
+	}
+}
+
+# DOMINANCE LEGACIES
+
+bld_dominance_legacy_1 = { # Ruthless
+	legacy = bld_dominance_legacy_track
+
+	character_modifier = {
+		dread_gain_mult = 0.2
+		pursue_efficiency = 0.1
+		enemy_hard_casualty_modifier = 0.1
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_dominance_legacy_2 = { # Oppressive
+	legacy = bld_dominance_legacy_track
+
+	character_modifier = {
+		dread_baseline_add = 10
+		monthly_war_income_mult = 0.1
+	}
+}
+
+bld_dominance_legacy_3 = { # Dark Rumors
+	legacy = bld_dominance_legacy_track
+
+	character_modifier = {
+		dread_decay_mult = -0.2
+		monthly_prestige_gain_per_dread_add = 0.05
+	}
+}
+
+bld_dominance_legacy_4 = { # Intimidating
+	legacy = bld_dominance_legacy_track
+
+	character_modifier = {
+		men_at_arms_maintenance = -0.1
+		intimidated_vassal_levy_contribution_mult = 0.1
+		cowed_vassal_levy_contribution_mult = 0.2
+	}
+}
+
+bld_dominance_legacy_5 = { # Brutal
+	legacy = bld_dominance_legacy_track
+
+	character_modifier = {
+		martial_per_prestige_level = 1
+		prowess_per_stress_level = 1
+	}
+}
+
+# INDUSTRY LEGACIES
+
+bld_industry_legacy_1 = { # Earnest Efforts
+	legacy = bld_industry_legacy_track
+
+	character_modifier = {
+		short_reign_duration_mult = -0.25
+		enemy_hostile_scheme_phase_duration_add = 30
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_industry_legacy_2 = { # Ever-Improving
+	legacy = bld_industry_legacy_track
+
+	character_modifier = {
+		build_speed = -0.1
+		development_growth_factor = 0.2
+	}
+}
+
+bld_industry_legacy_3 = { # Always Learning
+	legacy = bld_industry_legacy_track
+
+	character_modifier = {
+		councillor_opinion = 10
+		cultural_head_fascination_mult = 0.15
+	}
+}
+
+bld_industry_legacy_4 = { # Meticulous
+	legacy = bld_industry_legacy_track
+
+	character_modifier = {
+		domain_limit = 1
+		county_opinion_add = 5
+	}
+}
+
+bld_industry_legacy_5 = { # Perseverance
+	legacy = bld_industry_legacy_track
+
+	character_modifier = {
+		learning_per_stress_level = 1
+		stewardship_per_stress_level = 1
+		monthly_income_per_stress_level_mult = 0.05
+	}
+}
+
+# INFLUENCE LEGACIES
+
+bld_influence_legacy_1 = { # Power Dynamics
+	legacy = bld_influence_legacy_track
+
+	character_modifier = {
+		vassal_limit = 10
+		direct_vassal_opinion = 5
+		courtier_and_guest_opinion = 5
+		fellow_vassal_opinion = 10
+		liege_opinion = 10
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_influence_legacy_2 = { # Astute
+	legacy = bld_influence_legacy_track
+
+	character_modifier = {
+		monthly_county_control_growth_add = 0.1
+		vassal_tax_contribution_mult = 0.1
+	}
+}
+
+bld_influence_legacy_3 = { # Cunning
+	legacy = bld_influence_legacy_track
+
+	character_modifier = {
+		befriend_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		sway_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		murder_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value		
+	}
+}
+
+bld_influence_legacy_4 = { # Popular Persona
+	legacy = bld_influence_legacy_track
+
+	character_modifier = {
+		county_opinion_add = 5
+		monthly_tyranny = -0.05
+	}
+}
+
+bld_influence_legacy_5 = { # Trustworthy
+	legacy = bld_influence_legacy_track
+
+	character_modifier = {
+		intrigue_per_prestige_level = 1
+	}
+}
+
+# MERCANTILE LEGACIES
+
+bld_mercantile_legacy_1 = { # International Trade
+	legacy = bld_mercantile_legacy_track
+
+	character_modifier = {
+		diplomatic_range_mult = 0.15
+		independent_ruler_opinion = 10
+		court_grandeur_baseline_add = 5
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_mercantile_legacy_2 = { # Artisans
+	legacy = bld_mercantile_legacy_track
+
+	character_modifier = {
+		domain_tax_mult = 0.15
+		build_speed = -0.05
+		build_gold_cost = -0.05
+	}
+}
+
+bld_mercantile_legacy_3 = { # Guarded Roads
+	legacy = bld_mercantile_legacy_track
+
+	character_modifier = {
+		knight_limit = 1
+		men_at_arms_maintenance = -0.2
+		mercenary_hire_cost_mult = -0.2
+	}
+}
+
+bld_mercantile_legacy_4 = { # Investors
+	legacy = bld_mercantile_legacy_track
+
+	character_modifier = {
+		happy_powerful_vassal_tax_contribution_mult = 0.2
+	}
+}
+
+bld_mercantile_legacy_5 = { # Established Routes
+	legacy = bld_mercantile_legacy_track
+
+	character_modifier = {
+		diplomatic_range_mult = 0.15
+		long_reign_bonus_mult = 0.25
+		stewardship_per_prestige_level = 1
+	}
+}
+
+# SEAFARING LEGACIES
+
+bld_seafaring_legacy_1 = { # Sea Legs
+	legacy = bld_seafaring_legacy_track
+
+	character_modifier = {
+		prowess = 1
+		no_water_crossing_penalty = yes
+		embarkation_cost_mult = -0.25
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_seafaring_legacy_2 = { # Well-Traveled
+	legacy = bld_seafaring_legacy_track
+
+	character_modifier = {
+		diplomatic_range_mult = 0.3
+		different_culture_opinion = 10
+	}
+}
+
+bld_seafaring_legacy_3 = { # Sea Breezes
+	legacy = bld_seafaring_legacy_track
+
+	character_modifier = {
+		stress_gain_mult = -0.1
+		stress_loss_mult = 0.1
+		naval_movement_speed_mult = 0.2
+	}
+}
+
+bld_seafaring_legacy_4 = { # Maritime Law
+	legacy = bld_seafaring_legacy_track
+
+	character_modifier = {
+		monthly_war_income_mult = 0.1
+		coastal_advantage = 5
+	}
+}
+
+bld_seafaring_legacy_5 = { # Bountiful Seas
+	legacy = bld_seafaring_legacy_track
+
+	character_modifier = {
+		army_maintenance_mult = -0.2
+		supply_duration = 0.2
+		supply_capacity_mult = 0.2
+	}
+}
+
+# TEMPTATION LEGACIES
+
+bld_temptation_legacy_1 = { # Fruitful Labors
+	legacy = bld_temptation_legacy_track
+
+	character_modifier = {
+		fertility = 0.1
+		years_of_fertility = 5
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_temptation_legacy_2 = { # Comforts of Home
+	legacy = bld_temptation_legacy_track
+
+	character_modifier = {
+		court_grandeur_baseline_add = 5
+		spouse_opinion = 10
+		stress_loss_mult = 0.1
+	}
+}
+
+bld_temptation_legacy_3 = { # Prolific Flirt
+	legacy = bld_temptation_legacy_track
+
+	character_modifier = {
+		seduce_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		courting_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		elope_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	}
+}
+
+bld_temptation_legacy_4 = { # Refined Tastes
+	legacy = bld_temptation_legacy_track
+
+	character_modifier = {
+		positive_inactive_inheritance_chance = 0.1
+		negative_inactive_inheritance_chance = -0.1
+		genetic_trait_strengthen_chance = 0.1
+	}
+}
+
+bld_temptation_legacy_5 = { # Sweet Corruption
+	legacy = bld_temptation_legacy_track
+
+	character_modifier = {
+		intrigue_per_stress_level = 1
+		max_seduce_schemes_add = 1
+	}
+}
+
+# TRADITION LEGACIES
+
+bld_tradition_legacy_1 = { # Enduring
+	legacy = bld_tradition_legacy_track
+
+	character_modifier = {
+		long_reign_bonus_mult = 0.25
+		title_creation_cost_mult = -0.1
+		domain_tax_same_faith_mult_even_if_baron = 0.1
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_tradition_legacy_2 = { # Unified Front
+	legacy = bld_tradition_legacy_track
+
+	character_modifier = {
+		dread_baseline_add = 5
+		dynasty_opinion = 5
+		dynasty_house_opinion = 5
+		close_relative_opinion = 10
+	}
+}
+
+bld_tradition_legacy_3 = { # Customary
+	legacy = bld_tradition_legacy_track
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.15
+		monthly_prestige_gain_mult = 0.15
+	}
+}
+
+bld_tradition_legacy_4 = { # Like-Minded
+	legacy = bld_tradition_legacy_track
+
+	character_modifier = {
+		same_culture_opinion = 5
+		same_faith_opinion = 5
+		same_culture_holy_order_hire_cost_mult = -0.2
+		same_culture_mercenary_hire_cost_mult = -0.2
+	}
+}
+
+bld_tradition_legacy_5 = { # Established
+	legacy = bld_tradition_legacy_track
+
+	character_modifier = {
+		diplomacy_per_piety_level = 1
+		enemy_personal_scheme_phase_duration_add = 30
+	}
+}
+
+# WITCHCRAFT LEGACIES
+
+bld_witchcraft_legacy_1 = { # Profane Rites
+	legacy = bld_witchcraft_legacy_track
+
+	character_modifier = {
+		fertility = 0.1
+		life_expectancy = 5
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+bld_witchcraft_legacy_2 = { # Initiation
+	legacy = bld_witchcraft_legacy_track
+
+	character_modifier = {
+		max_convert_to_witchcraft_schemes_add = 3
+		convert_to_witchcraft_scheme_phase_duration_add = monumental_scheme_phase_duration_bonus_value
+	}
+}
+
+bld_witchcraft_legacy_3 = { # Sorcerous Studies
+	legacy = bld_witchcraft_legacy_track
+
+	character_modifier = {
+		cultural_head_fascination_mult = 0.15
+		learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	}
+}
+
+bld_witchcraft_legacy_4 = { # Otherworldly Aura
+	legacy = bld_witchcraft_legacy_track
+
+	character_modifier = {
+		monthly_piety_gain_per_dread_add = 0.1
+		dread_baseline_add = 5
+	}
+}
+
+bld_witchcraft_legacy_5 = { # Dark Mysticism
+	legacy = bld_witchcraft_legacy_track
+
+	character_modifier = {
+		intrigue_per_piety_level = 1
+	}
+}

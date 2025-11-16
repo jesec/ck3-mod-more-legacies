@@ -1,0 +1,94 @@
+﻿l_german:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "Gehorsam, Ehre und ein würdiger Kriegsgeist."
+bld_chivalry_legacy_1_name: "Romantisch"
+bld_chivalry_legacy_2_name: "Tapfer"
+bld_chivalry_legacy_3_name: "Poetisch"
+bld_chivalry_legacy_4_name: "Tapfer"
+bld_chivalry_legacy_5_name: "Heroisch"
+bld_chivalry_legacy_track_name: "Ritterlichkeit"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "Hingabe"
+bld_devotion_legacy_track_desc: "Frömmigkeit, Ehrerbietung und Pflege heiliger Stätten."
+bld_devotion_legacy_1_name: "Gerecht"
+bld_devotion_legacy_2_name: "Verehrt"
+bld_devotion_legacy_3_name: "Heilig"
+bld_devotion_legacy_4_name: "Unerschütterlich"
+bld_devotion_legacy_5_name: "Inbrünstig"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "Dominanz"
+bld_dominance_legacy_track_desc: "Kraft, Macht und Herrschaft über die Schwachen"
+bld_dominance_legacy_1_name: "Skrupellos"
+bld_dominance_legacy_2_name: "Bedrückend"
+bld_dominance_legacy_3_name: "Dunkle Gerüchte"
+bld_dominance_legacy_4_name: "Einschüterung"
+bld_dominance_legacy_5_name: "Brutal"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "Industrie"
+bld_industry_legacy_track_desc: "Fortschritt, Innovation und der nie endende Vorstoß zu Neuem"
+bld_industry_legacy_1_name: "Ernste Bemühungen"
+bld_industry_legacy_2_name: "Jederzeit Aufmerksam"
+bld_industry_legacy_3_name: "Schule des Lebens"
+bld_industry_legacy_4_name: "Akribisch"
+bld_industry_legacy_5_name: "Ausdauer"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "Einfluss"
+bld_influence_legacy_track_desc: "Geheimnisse, Schlupflöcher und subtile, aber unbestreitbare Kontrolle"
+bld_influence_legacy_1_name: "Machtdynamik"
+bld_influence_legacy_2_name: "Scharfsinn"
+bld_influence_legacy_3_name: "List"
+bld_influence_legacy_4_name: "Beliebte Persönlichkeit"
+bld_influence_legacy_5_name: "Vertrauenswürdig"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "Kaufmann"
+bld_mercantile_legacy_track_desc: "Handel bietet sowohl Gold als auch Verbindungen"
+bld_mercantile_legacy_1_name: "Internationaler Handel"
+bld_mercantile_legacy_2_name: "Handwerker"
+bld_mercantile_legacy_3_name: "Bewachte Straßen"
+bld_mercantile_legacy_4_name: "Investoren"
+bld_mercantile_legacy_5_name: "Etablierte Routen"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "Seefahrt"
+bld_seafaring_legacy_track_desc: "Die weiten Meere zu besegeln bedeutet, mit der ganzen Welt verbunden zu sein"
+bld_seafaring_legacy_1_name: "Seebeine"
+bld_seafaring_legacy_2_name: "Weitgereist"
+bld_seafaring_legacy_3_name: "Meeresbrise"
+bld_seafaring_legacy_4_name: "Seerecht"
+bld_seafaring_legacy_5_name: "Reiches Meer"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "Versuchung"
+bld_temptation_legacy_track_desc: "Lust, Liebe und die schönen Dinge im Leben"
+bld_temptation_legacy_1_name: "Ertragreiche Verbindungen"
+bld_temptation_legacy_2_name: "Komfort von zu Hause"
+bld_temptation_legacy_3_name: "Ergiebiger Flirt"
+bld_temptation_legacy_4_name: "Raffinierter Geschmack"
+bld_temptation_legacy_5_name: "Süße Korruption"
+max_seduce_schemes_add: "Maximale Verführungsschemata"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "Tradition"
+bld_tradition_legacy_track_desc: "Unnachgiebige Bräuche und Rituale erhalten die Stärke eines Hauses"
+bld_tradition_legacy_1_name: "Ausdauernd"
+bld_tradition_legacy_2_name: "Einheitsfront"
+bld_tradition_legacy_3_name: "Gebräuchlich"
+bld_tradition_legacy_4_name: "Gleichgesinnt"
+bld_tradition_legacy_5_name: "Eingesessen"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "Hexerei"
+bld_witchcraft_legacy_track_desc: "Das Okkulte, das Arkane und die Mysterien des Lebens selbst"
+bld_witchcraft_legacy_1_name: "Unheilige Riten"
+bld_witchcraft_legacy_2_name: "Initiation"
+bld_witchcraft_legacy_3_name: "Studien der Zauberei"
+bld_witchcraft_legacy_4_name: "Aura einer anderen Welt"
+bld_witchcraft_legacy_5_name: "Dunkle Mystik"
+max_convert_to_witchcraft_schemes_add: "Max. Hexerei-Bekehrungsintrigen"
+convert_to_witchcraft_scheme_phase_duration_add: "Dauer der Hexerei-Bekehrungsphase"

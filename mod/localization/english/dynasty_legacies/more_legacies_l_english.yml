@@ -1,0 +1,94 @@
+﻿l_english:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "Obedience, honor, and a noble warrior spirit"
+bld_chivalry_legacy_1_name: "Romantic"
+bld_chivalry_legacy_2_name: "Valiant"
+bld_chivalry_legacy_3_name: "Poetic"
+bld_chivalry_legacy_4_name: "Gallant"
+bld_chivalry_legacy_5_name: "Heroic"
+bld_chivalry_legacy_track_name: "Chivalry"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "Devotion"
+bld_devotion_legacy_track_desc: "Piety, deference, and the caretaking of holy places"
+bld_devotion_legacy_1_name: "Righteous"
+bld_devotion_legacy_2_name: "Venerate"
+bld_devotion_legacy_3_name: "Sanctify"
+bld_devotion_legacy_4_name: "Unwavering"
+bld_devotion_legacy_5_name: "Ardent"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "Dominance"
+bld_dominance_legacy_track_desc: "Power, might, and dominion over the weak"
+bld_dominance_legacy_1_name: "Ruthless"
+bld_dominance_legacy_2_name: "Oppressive"
+bld_dominance_legacy_3_name: "Dark Rumors"
+bld_dominance_legacy_4_name: "Intimidating"
+bld_dominance_legacy_5_name: "Brutal"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "Industry"
+bld_industry_legacy_track_desc: "Progress, innovation, and the never-ending advance towards the new"
+bld_industry_legacy_1_name: "Earnest Efforts"
+bld_industry_legacy_2_name: "Ever-Improving"
+bld_industry_legacy_3_name: "Always Learning"
+bld_industry_legacy_4_name: "Meticulous"
+bld_industry_legacy_5_name: "Perseverance"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "Influence"
+bld_influence_legacy_track_desc: "Secrets, loopholes, and subtle but undeniable control"
+bld_influence_legacy_1_name: "Power Dynamics"
+bld_influence_legacy_2_name: "Astute"
+bld_influence_legacy_3_name: "Cunning"
+bld_influence_legacy_4_name: "Popular Persona"
+bld_influence_legacy_5_name: "Trustworthy"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "Mercantile"
+bld_mercantile_legacy_track_desc: "Trade offers both gold and connections"
+bld_mercantile_legacy_1_name: "International Trade"
+bld_mercantile_legacy_2_name: "Artisans"
+bld_mercantile_legacy_3_name: "Guarded Roads"
+bld_mercantile_legacy_4_name: "Investors"
+bld_mercantile_legacy_5_name: "Established Routes"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "Seafaring"
+bld_seafaring_legacy_track_desc: "To sail the vast seas is to be connected with all the world"
+bld_seafaring_legacy_1_name: "Sea Legs"
+bld_seafaring_legacy_2_name: "Well-Traveled"
+bld_seafaring_legacy_3_name: "Sea Breezes"
+bld_seafaring_legacy_4_name: "Maritime Law"
+bld_seafaring_legacy_5_name: "Bountiful Seas"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "Temptation"
+bld_temptation_legacy_track_desc: "Lust, love, and the finer things in life"
+bld_temptation_legacy_1_name: "Fruitful Labors"
+bld_temptation_legacy_2_name: "Comforts of Home"
+bld_temptation_legacy_3_name: "Prolific Flirt"
+bld_temptation_legacy_4_name: "Refined Tastes"
+bld_temptation_legacy_5_name: "Sweet Corruption"
+max_seduce_schemes_add: "Max Seduce Schemes"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "Tradition"
+bld_tradition_legacy_track_desc: "Unyielding customs and rituals sustain the strength of a house"
+bld_tradition_legacy_1_name: "Enduring"
+bld_tradition_legacy_2_name: "Unified Front"
+bld_tradition_legacy_3_name: "Customary"
+bld_tradition_legacy_4_name: "Like-Minded"
+bld_tradition_legacy_5_name: "Established"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "Witchcraft"
+bld_witchcraft_legacy_track_desc: "The occult, the arcane, and the mysteries of life itself"
+bld_witchcraft_legacy_1_name: "Profane Rites"
+bld_witchcraft_legacy_2_name: "Initiation"
+bld_witchcraft_legacy_3_name: "Sorcerous Studies"
+bld_witchcraft_legacy_4_name: "Otherworldly Aura"
+bld_witchcraft_legacy_5_name: "Dark Mysticism"
+max_convert_to_witchcraft_schemes_add: "Max Convert to Witchcraft Schemes"
+convert_to_witchcraft_scheme_phase_duration_add: "Convert to Witchcraft Phase Length"

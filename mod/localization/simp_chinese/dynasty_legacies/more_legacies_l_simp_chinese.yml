@@ -1,0 +1,94 @@
+﻿l_simp_chinese:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "服从、荣誉和高尚的战士精神"
+bld_chivalry_legacy_1_name: "浪漫主义"
+bld_chivalry_legacy_2_name: "果敢无畏"
+bld_chivalry_legacy_3_name: "武功诗人"
+bld_chivalry_legacy_4_name: "骑士风度"
+bld_chivalry_legacy_5_name: "英雄气概"
+bld_chivalry_legacy_track_name: "骑士传承"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "奉献传承"
+bld_devotion_legacy_track_desc: "虔诚、敬畏和对圣地的守护"
+bld_devotion_legacy_1_name: "处事公正"
+bld_devotion_legacy_2_name: "心怀敬畏"
+bld_devotion_legacy_3_name: "赎罪成圣"
+bld_devotion_legacy_4_name: "坚定不移"
+bld_devotion_legacy_5_name: "热忱奉献"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "统治传承"
+bld_dominance_legacy_track_desc: "权力、力量和对弱者的统治"
+bld_dominance_legacy_1_name: "无情铁腕"
+bld_dominance_legacy_2_name: "高压统治"
+bld_dominance_legacy_3_name: "黑暗流言"
+bld_dominance_legacy_4_name: "淫威慑人"
+bld_dominance_legacy_5_name: "冷酷野兽"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "产业传承"
+bld_industry_legacy_track_desc: "进步、创新和永无止境的求新求变"
+bld_industry_legacy_1_name: "辛勤努力"
+bld_industry_legacy_2_name: "精益求精"
+bld_industry_legacy_3_name: "学无止境"
+bld_industry_legacy_4_name: "一丝不苟"
+bld_industry_legacy_5_name: "锲而不舍"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "影响传承"
+bld_influence_legacy_track_desc: "秘密、漏洞和微妙但不可否认的控制"
+bld_influence_legacy_1_name: "权力动态"
+bld_influence_legacy_2_name: "机敏聪慧"
+bld_influence_legacy_3_name: "奸诈狡黠"
+bld_influence_legacy_4_name: "八面玲珑"
+bld_influence_legacy_5_name: "值得信赖"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "商业传承"
+bld_mercantile_legacy_track_desc: "贸易带来黄金和人脉"
+bld_mercantile_legacy_1_name: "国际贸易"
+bld_mercantile_legacy_2_name: "能工巧匠"
+bld_mercantile_legacy_3_name: "康庄大道"
+bld_mercantile_legacy_4_name: "投资食利"
+bld_mercantile_legacy_5_name: "既定路线"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "航海传承"
+bld_seafaring_legacy_track_desc: "蹈海弄潮，五洋相接"
+bld_seafaring_legacy_1_name: "航海之子"
+bld_seafaring_legacy_2_name: "四海为家"
+bld_seafaring_legacy_3_name: "海上来风"
+bld_seafaring_legacy_4_name: "海事法"
+bld_seafaring_legacy_5_name: "海之丰饶"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "诱惑传承"
+bld_temptation_legacy_track_desc: "欲望、爱情和生活中的美好事物"
+bld_temptation_legacy_1_name: "硕果累累"
+bld_temptation_legacy_2_name: "舒适之家"
+bld_temptation_legacy_3_name: "丰硕调情"
+bld_temptation_legacy_4_name: "精致品味"
+bld_temptation_legacy_5_name: "甜蜜堕落"
+max_seduce_schemes_add: "最大勾引计谋"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "传统传承"
+bld_tradition_legacy_track_desc: "不屈不挠的习俗和礼仪维系着一个家族的力量"
+bld_tradition_legacy_1_name: "历久弥新"
+bld_tradition_legacy_2_name: "统一战线"
+bld_tradition_legacy_3_name: "古老习俗"
+bld_tradition_legacy_4_name: "志同道合"
+bld_tradition_legacy_5_name: "公认传统"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "巫术传承"
+bld_witchcraft_legacy_track_desc: "神秘学，奥术，以及生命本身的奥秘"
+bld_witchcraft_legacy_1_name: "亵渎仪式"
+bld_witchcraft_legacy_2_name: "巫术启蒙"
+bld_witchcraft_legacy_3_name: "巫术研究"
+bld_witchcraft_legacy_4_name: "异界光环"
+bld_witchcraft_legacy_5_name: "黑暗秘术"
+max_convert_to_witchcraft_schemes_add: "最大传播巫术计谋"
+convert_to_witchcraft_scheme_phase_duration_add: "传播巫术计谋时长"

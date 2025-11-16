@@ -1,0 +1,150 @@
+bld_chivalry_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					OR = {
+						culture = { has_cultural_pillar = ethos_bellicose }
+						culture = { has_cultural_pillar = ethos_courtly }
+						culture = { has_cultural_tradition = tradition_hereditary_hierarchy }
+						culture = { has_cultural_tradition = tradition_only_the_strong }
+						culture = { has_cultural_tradition = tradition_chivalry }
+						culture = { has_cultural_tradition = tradition_chanson_de_geste }
+					}
+				}
+
+				has_dynasty_perk = bld_chivalry_legacy_1
+			}
+		}
+	}
+}
+
+bld_devotion_legacy_track = {
+	
+}
+
+bld_dominance_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					OR = {
+						culture = { has_cultural_pillar = ethos_bellicose }
+						culture = { has_cultural_pillar = ethos_stoic }
+						culture = { has_cultural_tradition = tradition_ruling_caste }
+						culture = { has_cultural_tradition = tradition_castle_keepers }
+						culture = { has_cultural_tradition = tradition_staunch_traditionalists }
+						culture = { has_cultural_tradition = tradition_talent_acquisition }
+						culture = { has_cultural_tradition = tradition_swords_for_hire }
+						culture = { has_cultural_tradition = tradition_only_the_strong }
+						culture = { has_cultural_tradition = tradition_eye_for_an_eye }
+						culture = { has_cultural_tradition = tradition_martial_admiration }
+						culture = { has_cultural_tradition = tradition_warrior_culture }
+						culture = { has_cultural_tradition = tradition_fp1_performative_honour }
+						culture = { has_cultural_tradition = tradition_fp1_the_right_to_prove }
+						culture = { has_cultural_tradition = tradition_fp1_trials_by_combat }
+						culture = { has_cultural_tradition = tradition_by_the_sword }
+					}
+				}
+
+				has_dynasty_perk = bld_dominance_legacy_1
+			}
+		}
+	}
+}
+
+bld_industry_legacy_track = {
+	
+}
+
+bld_influence_legacy_track = {
+	
+}
+
+bld_mercantile_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					OR = {
+						culture = { has_cultural_pillar = ethos_bureaucratic }
+						culture = { has_cultural_pillar = ethos_egalitarian }
+						culture = { has_cultural_tradition = tradition_astute_diplomats }
+						culture = { has_cultural_tradition = tradition_family_entrepreneurship }
+						culture = { has_cultural_tradition = tradition_maritime_mercantilism }
+						culture = { has_cultural_tradition = tradition_artisans }
+						culture = { has_cultural_tradition = tradition_xenophilic }
+					}
+				}
+
+				has_dynasty_perk = bld_mercantile_legacy_1
+			}
+		}
+	}
+}
+
+bld_seafaring_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					OR = {
+						culture = { has_cultural_tradition = tradition_maritime_mercantilism }
+						culture = { has_cultural_tradition = tradition_fp1_coastal_warriors }
+						culture = { has_cultural_tradition = tradition_fishermen }
+						culture = { has_cultural_tradition = tradition_practiced_pirates }
+						culture = { has_cultural_tradition = tradition_seafaring }
+						culture = { has_cultural_tradition = tradition_polders }
+					}
+				}
+
+				has_dynasty_perk = bld_seafaring_legacy_1
+			}
+		}
+	}
+}
+
+bld_temptation_legacy_track = {
+	
+}
+
+bld_tradition_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					NOR = {
+						culture = { has_cultural_pillar = ethos_egalitarian }
+						culture = { has_cultural_tradition = tradition_culture_blending }
+						culture = { has_cultural_tradition = tradition_fp2_malleable_subjects }
+						culture = { has_cultural_tradition = tradition_malleable_invaders }
+						culture = { has_cultural_tradition = tradition_xenophilic }
+						culture = { has_cultural_tradition = tradition_language_scholars }
+						culture = { has_cultural_tradition = tradition_religion_blending }
+						culture = { has_cultural_tradition = tradition_african_tolerance }
+						culture = { has_cultural_tradition = tradition_steppe_tolerance }
+					}
+				}
+
+				has_dynasty_perk = bld_tradition_legacy_1
+			}
+		}
+	}
+}
+
+bld_witchcraft_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					OR = {
+						has_trait = witch
+						any_secret = { secret_type = secret_witch }
+					}
+				}
+
+				has_dynasty_perk = bld_witchcraft_legacy_1
+			}
+		}
+	}
+}

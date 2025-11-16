@@ -1,0 +1,785 @@
+name: Compatibility Bump
+
+on:
+  schedule:
+    # Run daily at 3 AM UTC (offset from less-restrictive-legacies)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: compat-bump
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+  actions: read
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    outputs:
+      needs_update: ${{ steps.check.outputs.needs_update }}
+      current: ${{ steps.check.outputs.current }}
+      latest: ${{ steps.check.outputs.latest }}
+      pr_exists: ${{ steps.check_pr.outputs.exists }}
+      pr_number: ${{ steps.check_pr.outputs.number }}
+      branch_exists: ${{ steps.check_branch.outputs.exists }}
+    steps:
+      - name: Check versions via API
+        id: check
+        run: |
+          BASE_REPO="jesec/ck3-mod-base"
+
+          # Get current version from our base/.ck3-version.json
+          CURRENT_VERSION=$(gh api "repos/${{ github.repository }}/contents/base/.ck3-version.json" \
+            --jq '.content' | base64 -d | jq -r '.version')
+
+          # Get latest version from base repo's base/.ck3-version.json
+          LATEST_VERSION=$(gh api "repos/$BASE_REPO/contents/base/.ck3-version.json" \
+            --jq '.content' | base64 -d | jq -r '.version')
+
+          echo "current=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+          echo "latest=$LATEST_VERSION" >> $GITHUB_OUTPUT
+
+          # Compare versions using sort -V
+          NEWER=$(printf "%s\n%s" "$CURRENT_VERSION" "$LATEST_VERSION" | sort -V | tail -1)
+
+          if [ "$NEWER" = "$LATEST_VERSION" ] && [ "$CURRENT_VERSION" != "$LATEST_VERSION" ]; then
+            echo "needs_update=true" >> $GITHUB_OUTPUT
+            echo "📦 Update available: $CURRENT_VERSION → $LATEST_VERSION"
+          else
+            echo "needs_update=false" >> $GITHUB_OUTPUT
+            echo "✅ Already on latest: $CURRENT_VERSION"
+          fi
+
+      - name: Check existing PR
+        id: check_pr
+        if: steps.check.outputs.needs_update == 'true'
+        run: |
+          BRANCH="compat/${{ steps.check.outputs.latest }}"
+          REPO_OWNER="${{ github.repository_owner }}"
+
+          # Security: Only accept PRs that:
+          # 1. Are created by app/claude (Claude Code bot)
+          # 2. Are from THIS repository (not a fork)
+          # 3. Have the correct branch name
+          # 4. Target master branch
+          PR_DATA=$(gh pr list -R "${{ github.repository }}" \
+            --label "compat-bump" \
+            --state open \
+            --json number,author,headRefName,headRepositoryOwner,baseRefName \
+            -q "[.[] | select(
+              .author.login == \"app/claude\" and
+              .headRepositoryOwner.login == \"$REPO_OWNER\" and
+              .headRefName == \"$BRANCH\" and
+              .baseRefName == \"master\"
+            )][0]")
+
+          if [ -n "$PR_DATA" ] && [ "$PR_DATA" != "null" ]; then
+            PR_NUMBER=$(echo "$PR_DATA" | jq -r '.number')
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+            echo "✅ Found valid PR #$PR_NUMBER from app/claude on branch $BRANCH"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "✅ No valid PR found (will create new one after merge)"
+          fi
+
+      - name: Check existing branch
+        id: check_branch
+        if: steps.check.outputs.needs_update == 'true'
+        run: |
+          BRANCH="compat/${{ steps.check.outputs.latest }}"
+          REPO_URL="https://github.com/${{ github.repository }}.git"
+
+          if git ls-remote --heads "$REPO_URL" "$BRANCH" | grep -q "$BRANCH"; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "⏭️  Branch $BRANCH already exists - skipping"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "✅ Branch $BRANCH does not exist - will proceed"
+          fi
+
+  claude-merge:
+    needs: check-version
+    # Security: Skip if branch exists (human might be working on it, or previous run may have failed)
+    # Only proceed if update needed AND branch doesn't exist
+    if: needs.check-version.outputs.needs_update == 'true' && needs.check-version.outputs.branch_exists != 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Setup base repository remote
+        run: |
+          # Add base repository as remote (if not already present)
+          if ! git remote | grep -q '^base$'; then
+            git remote add base https://github.com/jesec/ck3-mod-base.git
+          fi
+
+          # Fetch base tags - this brings in base/1.18.0, base/1.18.1, etc.
+          git fetch base --tags
+
+          echo "✅ Base repository tags fetched"
+
+      - name: Invoke Claude Code
+        uses: anthropics/claude-code-action@v1
+        env:
+          MAX_THINKING_TOKENS: "32000"
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: "--dangerously-skip-permissions"
+          prompt: |
+            CONTEXT: CI Automation - compat-bump workflow
+            Repository: CK3 "More Legacies" mod
+            TASK: Perform compatibility verification for base/${{ needs.check-version.outputs.current }} → base/${{ needs.check-version.outputs.latest }}
+
+            ═══════════════════════════════════════════════════════════════════
+
+            CRITICAL: THIS MOD'S UNIQUE CHALLENGE
+
+            This repository NEVER modifies base/, so the merge will ALWAYS succeed cleanly.
+
+            ```bash
+            git merge base/${{ needs.check-version.outputs.latest }}
+            # Result: ALWAYS succeeds with zero conflicts
+            ```
+
+            **This proves NOTHING about mod compatibility.**
+
+            The merge succeeding doesn't mean:
+            - Dependencies still exist ✗
+            - Modifiers still work ✗
+            - Features still function ✗
+            - Mod is compatible ✗
+
+            It only means: base/ files don't overlap with mod/ files (always true).
+
+            **THE CHALLENGE:** You must ACTIVELY investigate and verify, because merge success gives you no information.
+
+            ═══════════════════════════════════════════════════════════════════
+
+            YOUR RESPONSIBILITY:
+
+            Read CLAUDE.md IN FULL. It contains:
+            - Why clean merges are meaningless for this mod
+            - 11 patterns of breakage (semantic reworks, renames, removals, etc.)
+            - Investigation methodology (critical thinking, not scripts)
+            - When and how to use agents for comprehensive verification
+            - Evidence standards and reporting guidelines
+
+            The workflow below provides structure, but YOU must think critically about THIS specific update.
+
+            ═══════════════════════════════════════════════════════════════════
+
+            GIT REMOTES (already configured):
+
+            - origin: ${{ github.repository }} (this mod)
+            - base: jesec/ck3-mod-base (vanilla CK3 files)
+
+            Base remote already fetched with all tags (base/1.18.0, base/1.18.1, etc.)
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 0: SETUP
+
+            Target version: base/${{ needs.check-version.outputs.latest }}
+            Branch name: compat/${{ needs.check-version.outputs.latest }}
+
+            1. Create branch: `git checkout -b compat/${{ needs.check-version.outputs.latest }}`
+
+            2. Create placeholder commit:
+               `git commit --allow-empty -m "WIP: Compatibility verification for base/${{ needs.check-version.outputs.latest }}"`
+
+            3. Push to create branch:
+               `git push -u origin compat/${{ needs.check-version.outputs.latest }}`
+
+            4. Create DRAFT PR:
+               ```bash
+               gh pr create --draft --title "Compatibility verification: base/${{ needs.check-version.outputs.latest }}" \
+                 --label "compat-bump" \
+                 --body "## CK3 Compatibility Verification
+
+               **Target:** base/${{ needs.check-version.outputs.latest }}
+               **Status:** 🔄 Automated verification in progress...
+
+               Claude Code is performing comprehensive compatibility investigation.
+               This PR will be updated with findings.
+
+               **Workflow:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+               ```
+
+            5. Remove WIP commit (real commits will replace it):
+               `git reset --hard HEAD^`
+
+            Now proceed with investigation.
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 1: RECONNAISSANCE - UNDERSTAND WHAT CHANGED
+
+            **Critical:** Don't just count files. Understand what SYSTEMS changed.
+
+            Investigation commands (examples - think about what matters for THIS update):
+            ```bash
+            # See scale of change
+            git diff --stat base/${{ needs.check-version.outputs.current }}..base/${{ needs.check-version.outputs.latest }} | tail -1
+
+            # Which directories in common/ changed?
+            git diff --name-only base/${{ needs.check-version.outputs.current }}..base/${{ needs.check-version.outputs.latest }} base/game/common/ | \
+              cut -d/ -f4 | sort | uniq -c | sort -rn | head -20
+
+            # Check critical files for this mod
+            for file in \
+              modifier_definition_formats/00_definitions.txt \
+              modifier_definition_formats/00_scheme_definitions.txt \
+              culture/traditions/*.txt \
+              culture/pillars/00_ethos.txt \
+              script_values/00_scheme_values.txt \
+              traits/00_traits.txt \
+              secret_types/00_secret_types.txt
+            do
+              if git diff --name-only base/${{ needs.check-version.outputs.current }}..base/${{ needs.check-version.outputs.latest }} | \
+                 grep -q "$file"; then
+                echo "⚠️ CHANGED: $file"
+              fi
+            done
+            ```
+
+            **Think:** Based on what changed, what verification is needed?
+
+            - If modifier_definition_formats/ changed heavily → Deep investigation required
+            - If culture/ changed → Verify tradition/ethos dependencies
+            - If script_values/ changed → Check script value references
+            - If nothing critical changed → Lighter verification acceptable
+
+            **Read patch notes:**
+            ```bash
+            cat base/.ck3-version.json
+            # Contains release notes URL - read them to understand Paradox's changes
+            ```
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 2: PERFORM MERGE (Will Always Succeed)
+
+            Execute the merge:
+            ```bash
+            git merge base/${{ needs.check-version.outputs.latest }} -m "Merge base/${{ needs.check-version.outputs.latest }}"
+            ```
+
+            **Expected result:** Merge succeeds cleanly with ZERO conflicts.
+
+            This is normal. This is expected. This proves nothing about compatibility.
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 3: COMPREHENSIVE DEPENDENCY VERIFICATION
+
+            **THIS IS THE CRITICAL PHASE.** The merge succeeded, but is the mod broken?
+
+            **Option A: Agent-Driven Systematic Verification (Recommended for thoroughness)**
+
+            Launch multiple agents in PARALLEL to comprehensively investigate:
+
+            **Agent 1: Base Game Change Analysis**
+            Task: Analyze what changed in base game between versions
+            - Read diffs of all changed files in critical directories
+            - Identify patterns (additions, renames, removals, reworks)
+            - Classify risk for each changed system
+            - Report specific changes that might affect mod
+
+            **Agent 2: Mod Dependency Extraction**
+            Task: Catalog what mod currently depends on
+            - Extract ALL modifiers from mod/common/dynasty_perks/*.txt
+            - Extract ALL traditions from mod/common/dynasty_legacies/*.txt
+            - Extract ALL ethos, script values, traits, secrets
+            - Map each dependency to base game location
+            - Report complete inventory with counts
+
+            **Agent 3: Cross-Reference and Verification**
+            Task: Verify every dependency against new base
+            - For each of ~150+ dependencies, check existence in new base
+            - For missing items: investigate git history, search for replacements
+            - For changed items: compare old vs new definitions
+            - Check semantics: do modifiers still mean what mod expects?
+            - Report: missing dependencies, semantic changes, required fixes
+
+            **Agent 4: Pattern Analysis**
+            Task: Check for known dangerous patterns
+            - Scheme system changes? (history of rework in v1.13)
+            - Systematic renames? (control change→growth pattern)
+            - Value scale changes? (health rebalancing)
+            - DLC gating additions?
+            - Report: which dangerous patterns detected
+
+            **Agent 5: Test Strategy Design**
+            Task: Create functional test plan based on findings
+            - Based on Agents 1-4 findings, identify high-risk perks
+            - Design test procedures for affected features
+            - Prioritize testing by risk level
+            - Report: what to test and how
+
+            Then SYNTHESIZE their findings and make decisions.
+
+            **Option B: Manual Investigation (If confident from reconnaissance)**
+
+            If reconnaissance shows minimal changes:
+            - Extract mod dependencies
+            - Spot-check critical ones
+            - Verify script values exist
+            - Build and test
+
+            **Choose option based on scale of changes discovered in Phase 1.**
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 4: INVESTIGATION AND FIXES
+
+            For ANY missing or changed dependencies found:
+
+            **Don't just report - INVESTIGATE and FIX.**
+
+            Example process for missing tradition:
+            1. Search git history: Why was it removed/renamed?
+            2. Search for semantic equivalent in new base
+            3. Compare definitions: Is replacement suitable?
+            4. Make design decision: Use replacement or redesign?
+            5. Update mod files with fix
+            6. Verify fix doesn't break other features
+            7. Test affected legacy track visibility
+
+            **Critical thinking questions:**
+            - Why did Paradox make this change?
+            - What is the mod trying to achieve with this dependency?
+            - What's the semantic equivalent in new version?
+            - Does replacement preserve mod's intent?
+            - Are there cascading impacts?
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 5: SEMANTIC VERIFICATION
+
+            **Beyond existence - do things still WORK AS INTENDED?**
+
+            For each perk type, verify semantics:
+
+            **Scheme perks** (8 perks use scheme modifiers):
+            - Read scheme modifier definitions
+            - Check: color, suffix, sign semantics
+            - Verify: Values have correct sign (negative = faster for phase_duration)
+            - Verify: Script values still = -20 and -100
+            - Question: Does "Romantic" perk (faster courting) actually make courting faster?
+
+            **Scaling perks** (6 perks use prestige_level/stress_level/piety_level):
+            - Check defines for level thresholds
+            - Verify: Prestige levels still 1-5
+            - Verify: Stress levels still 1-3
+            - Question: Does "+1 per level" make sense with current level ranges?
+
+            **Cultural visibility** (6 legacies have tradition/ethos conditions):
+            - Verify: All traditions still exist
+            - Verify: All ethos still exist
+            - Question: Will intended cultures still see these legacies?
+
+            **Think:** What would break silently? How would you know?
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 6: FUNCTIONAL TESTING
+
+            Build and test the mod:
+
+            ```bash
+            ./build.sh
+            ```
+
+            **If build fails:** Investigate syntax errors, fix them.
+
+            **If build succeeds:** This proves NOTHING about functionality.
+
+            **Actual verification needed:**
+            - Check brace balance in all mod files
+            - Verify localization key counts (9 languages should have same count)
+            - Spot-check: Load game, test one perk per legacy track (10 perks)
+            - Priority test: Any perks using changed systems
+            - Verify: Tooltips show correct values, effects apply in-game
+
+            **What to look for:**
+            - Do perks unlock?
+            - Do modifiers appear in character panel?
+            - Do scheme bonuses show in scheme tooltips?
+            - Do scaling modifiers update with level changes?
+            - Do visibility conditions work correctly?
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 7: UPDATE VERSION METADATA
+
+            **Only update if verification passes.**
+
+            Files to update:
+            - mod/descriptor.mod: supported_version="${{ needs.check-version.outputs.latest }}*"
+            - README.md: All version references
+            - mod/README.md: All version references
+
+            Update CHANGELOG:
+            ```
+            vX.X
+            Updated for CK3 ${{ needs.check-version.outputs.latest }}.* compatibility.
+            [List any fixes made: tradition renames, modifier updates, etc.]
+            [List verification performed: X modifiers, Y traditions verified]
+            [Note any issues or testing recommendations]
+            ```
+
+            Commit with descriptive message:
+            ```
+            Update compatibility: CK3 base/${{ needs.check-version.outputs.latest }}
+
+            ## Base Game Changes
+            [What Paradox changed - be specific]
+
+            ## Merge Result
+            Clean merge (expected - mod never modifies base/)
+
+            ## Verification Performed
+            - Dependencies: [X modifiers, Y traditions, Z script values checked]
+            - Missing: [List any, or "none"]
+            - Fixed: [List fixes made, or "no issues found"]
+            - Semantic: [Any semantic changes noted]
+
+            ## Testing
+            - Build: Success
+            - Functional: [What you tested]
+            - Result: [Pass/issues found]
+
+            ## Documentation Updated
+            - mod/descriptor.mod: version bump
+            - README.md: version references
+            - mod/CHANGELOG: documented changes
+            ```
+
+            ═══════════════════════════════════════════════════════════════════
+
+            PHASE 8: FINALIZE PR
+
+            **Step 1: Force push** (replacing WIP commit with real commits):
+            ```bash
+            git push --force origin compat/${{ needs.check-version.outputs.latest }}
+            ```
+
+            **Step 2: Find PR number:**
+            ```bash
+            PR_NUM=$(gh pr list -R "${{ github.repository }}" \
+              --label "compat-bump" \
+              --state open \
+              --head "compat/${{ needs.check-version.outputs.latest }}" \
+              --json number -q ".[0].number")
+            ```
+
+            **Step 3: Update PR body:**
+
+            **SUCCESS template** (if verification passed):
+            ```bash
+            gh pr edit $PR_NUM --body "$(cat <<'EOF'
+            ## CK3 Compatibility Verification
+
+            **Target:** base/${{ needs.check-version.outputs.latest }}
+            **Status:** ✅ Verification complete
+
+            ### Summary
+
+            [2-3 sentence summary of what changed and verification results]
+
+            ### Base Game Changes
+
+            [Specific systems that changed - from reconnaissance]
+            [Pattern: additions/renames/reworks]
+
+            ### Verification Performed
+
+            **Dependencies checked:**
+            - Character modifiers: X verified ([extraction command shown])
+            - Cultural traditions: Y verified
+            - Cultural ethos: Z verified
+            - Script values: N verified
+            - Traits: 1 verified (witch)
+            - Secrets: 1 verified (secret_witch)
+
+            **Issues found:**
+            - Missing: [List with investigation results, or "none"]
+            - Changed: [List semantic changes, or "none"]
+            - Fixed: [Specific fixes made, or "clean merge - no issues"]
+
+            ### Testing
+
+            - Build: [Success/failure]
+            - Brace balance: [Checked X files, all balanced]
+            - Localization: [9 languages, Y keys each]
+            - Functional: [Which perks tested, results]
+
+            ### Changes Made
+
+            [Specific file changes, or "none - version metadata only"]
+
+            ### Ready for Review
+
+            [Any in-game testing recommendations or notes]
+
+            ---
+
+            <!--
+            CONTEXT FOR FUTURE SESSIONS:
+
+            Verification method:
+            [How you verified - agents used? manual checks? both?]
+
+            Key findings:
+            [Important discoveries about this update]
+
+            Confidence level:
+            [High/medium/low and why]
+
+            Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            -->
+            EOF
+            )"
+            ```
+
+            **BLOCKED template** (only if genuinely cannot proceed):
+            ```bash
+            gh pr edit $PR_NUM --body "$(cat <<'EOF'
+            ## CK3 Compatibility Verification
+
+            **Target:** base/${{ needs.check-version.outputs.latest }}
+            **Status:** ⚠️ Human decision required
+
+            ### What I Found
+
+            [Specific issues discovered during investigation]
+
+            ### Why I Cannot Proceed
+
+            [Explain what requires human judgment]
+            [Example: "Tradition_X removed, found 3 possible replacements, need design decision"]
+
+            ### Investigation Performed
+
+            [What you checked - be specific with evidence]
+
+            ### Options for Resolution
+
+            [Present alternatives with pros/cons]
+
+            ### Recommendation
+
+            [What you would choose and why, but acknowledge need for human approval]
+
+            ---
+
+            <!--
+            CONTEXT FOR FUTURE SESSIONS:
+
+            Investigation details:
+            [Everything you discovered]
+
+            Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            -->
+            EOF
+            )"
+            ```
+
+            ═══════════════════════════════════════════════════════════════════
+
+            CRITICAL THINKING REQUIREMENTS:
+
+            Throughout this process:
+
+            ✅ **DO:**
+            - Read CLAUDE.md thoroughly first
+            - Think about what could break in THIS update
+            - Use agents for systematic verification at scale
+            - Investigate missing dependencies deeply
+            - Verify semantics, not just existence
+            - Test features functionally
+            - Show your work with evidence
+            - Make informed decisions with reasoning
+
+            ✗ **DON'T:**
+            - Follow phases blindly without thinking
+            - Trust that clean merge means success
+            - Check only what you expect to find
+            - Report issues without investigating
+            - Trust agent findings without verification
+            - Skip semantic verification
+            - Assume loading = working
+            - Express baseless confidence
+
+            ═══════════════════════════════════════════════════════════════════
+
+            VERIFICATION CHECKLIST (Think about what applies):
+
+            After merge, before declaring success:
+
+            - [ ] Read diffs to understand what changed in base game
+            - [ ] Extracted all current mod dependencies (modifiers, traditions, etc.)
+            - [ ] Verified each dependency exists in new base
+            - [ ] Investigated any missing dependencies
+            - [ ] Checked semantics for any changed dependencies
+            - [ ] Verified script values unchanged or updated appropriately
+            - [ ] Built mod successfully
+            - [ ] Checked file integrity (braces balanced)
+            - [ ] Verified localization completeness
+            - [ ] Tested features functionally (not just loading)
+            - [ ] Updated version metadata everywhere
+            - [ ] Documented findings with evidence
+
+            Don't just check boxes. THINK about whether each is sufficient for THIS update.
+
+            ═══════════════════════════════════════════════════════════════════
+
+            REMEMBER:
+
+            The merge WILL succeed. Build WILL probably succeed.
+
+            **But is the mod actually working?**
+
+            Only thorough investigation can answer that.
+
+            You have unlimited time. Use it to think critically, investigate thoroughly, and verify ruthlessly.
+
+            Context from workflow:
+            - Current: base/${{ needs.check-version.outputs.current }}
+            - Target: base/${{ needs.check-version.outputs.latest }}
+            - PR exists: ${{ needs.check-version.outputs.pr_exists }}
+            - PR number: ${{ needs.check-version.outputs.pr_number }}
+
+            BEGIN.
+
+      - name: Build mod package
+        run: |
+          ./build.sh
+          echo "✅ Built mod package"
+
+      - name: Prepare mod package
+        run: |
+          # Get mod name from descriptor.mod
+          MOD_NAME=$(grep -o 'name="[^"]*"' mod/descriptor.mod | sed 's/name="\(.*\)"/\1/' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//' | sed 's/-$//')
+
+          # Create package directory structure
+          mkdir -p package
+
+          # Create .mod descriptor
+          cat mod/descriptor.mod > "package/$MOD_NAME.mod"
+          echo "path=\"mod/$MOD_NAME\"" >> "package/$MOD_NAME.mod"
+
+          # Copy mod content
+          mkdir -p "package/$MOD_NAME"
+          cp -r out/* "package/$MOD_NAME/"
+
+          echo "✅ Prepared mod package"
+
+      - name: Upload mod package
+        id: upload_package
+        uses: actions/upload-artifact@v4
+        with:
+          name: mod-package
+          path: package/
+          retention-days: 90
+
+      - name: Create mod changes commit
+        run: |
+          VERSION="${{ needs.check-version.outputs.latest }}"
+          REPO="${{ github.repository }}"
+          TIMESTAMP=$(date +%s)
+
+          # Start from base version (vanilla)
+          git checkout base/$VERSION
+
+          # Remove base/game to capture deletions
+          git rm -r base/game
+
+          # Overlay mod changes from compat branch
+          git checkout compat/$VERSION -- base/game mod/
+
+          # Commit the changes (this shows mod modifications vs vanilla)
+          git commit -m "Mod content for CK3 base/$VERSION" \
+                     -m "All mod modifications compared to vanilla CK3 base/$VERSION." \
+                     -m "NOTE: This mod uses pure mod/ approach - base/ is reference only, not modified by mod."
+
+          # Get commit SHA
+          CHANGES_SHA=$(git rev-parse HEAD)
+
+          # Push to named ref
+          REF_NAME="refs/for/diff-${VERSION}-${TIMESTAMP}"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:$REF_NAME
+
+          echo "CHANGES_URL=https://github.com/$REPO/commit/$CHANGES_SHA" >> $GITHUB_ENV
+
+          echo "✅ Created changes commit: $CHANGES_SHA"
+
+      - name: Append artifacts to PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Find PR
+          PR_NUM=$(gh pr list -R "${{ github.repository }}" \
+            --label "compat-bump" \
+            --state open \
+            --json number,author,headRefName,headRepositoryOwner,baseRefName \
+            -q "[.[] | select(
+              .author.login == \"app/claude\" and
+              .headRepositoryOwner.login == \"${{ github.repository_owner }}\" and
+              .headRefName == \"compat/${{ needs.check-version.outputs.latest }}\" and
+              .baseRefName == \"master\"
+            )][0].number")
+
+          if [ -z "$PR_NUM" ] || [ "$PR_NUM" = "null" ]; then
+            echo "⚠️  PR not found, skipping artifact links"
+            exit 0
+          fi
+
+          echo "📝 Updating artifact links in PR #$PR_NUM"
+
+          # Get URLs
+          CHANGES_URL="${{ env.CHANGES_URL }}"
+          PKG_URL="${{ steps.upload_package.outputs.artifact-url }}"
+
+          # Get current PR body
+          gh pr view $PR_NUM --json body -q .body > current_body.txt
+
+          # Split at HTML comment
+          awk '/^<!--/ {exit} {print}' current_body.txt > before_comment.txt
+          awk '/^<!--/,0 {print}' current_body.txt > after_comment.txt
+
+          # Clean the before section
+          sed ':a; N; $!ba; s/\n---\n\n### 📦 Artifacts[^\n]*.*$//g; s/\n\n*---\n*$//g; s/\n\n*$//g' before_comment.txt > before_cleaned.txt
+
+          # Reconstruct with artifacts
+          {
+            cat before_cleaned.txt
+            printf '\n\n---\n\n### 📦 Artifacts\n\n- 📄 [Mod Content](%s) ([diff](%s.diff))\n- 📦 [Mod Package](%s)\n' \
+              "$CHANGES_URL" \
+              "$CHANGES_URL" \
+              "$PKG_URL"
+            if [ -s after_comment.txt ]; then
+              printf '\n---\n\n'
+              cat after_comment.txt
+            fi
+          } | gh pr edit $PR_NUM --body-file -
+
+          rm current_body.txt before_comment.txt after_comment.txt before_cleaned.txt
+
+          echo "✅ Updated PR #$PR_NUM"

@@ -1,0 +1,94 @@
+﻿l_russian:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "Послушание, честь и благородный воинский дух"
+bld_chivalry_legacy_1_name: "Романтичный"
+bld_chivalry_legacy_2_name: "Доблестный"
+bld_chivalry_legacy_3_name: "Поэтичный"
+bld_chivalry_legacy_4_name: "Галантный"
+bld_chivalry_legacy_5_name: "Героический"
+bld_chivalry_legacy_track_name: "Рыцарство"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "Преданность"
+bld_devotion_legacy_track_desc: "Благочестие, почтение и забота о святых местах"
+bld_devotion_legacy_1_name: "Праведный"
+bld_devotion_legacy_2_name: "Почитать"
+bld_devotion_legacy_3_name: "Освятить"
+bld_devotion_legacy_4_name: "Непоколебимый"
+bld_devotion_legacy_5_name: "Пылкий"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "Господство"
+bld_dominance_legacy_track_desc: "Власть, мощь и владычество над слабыми"
+bld_dominance_legacy_1_name: "Беспощадный"
+bld_dominance_legacy_2_name: "Угнетающий"
+bld_dominance_legacy_3_name: "Мрачные Слухи"
+bld_dominance_legacy_4_name: "Устрашающий"
+bld_dominance_legacy_5_name: "Жестокий"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "Трудолюбие"
+bld_industry_legacy_track_desc: "Прогресс, инновации и бесконечное движение к новому"
+bld_industry_legacy_1_name: "Искренние Усилия"
+bld_industry_legacy_2_name: "Постоянное Совершенствование"
+bld_industry_legacy_3_name: "Всегда Учащийся"
+bld_industry_legacy_4_name: "Скрупулёзный"
+bld_industry_legacy_5_name: "Настойчивость"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "Влияние"
+bld_influence_legacy_track_desc: "Секреты, лазейки и тонкий но неоспоримый контроль"
+bld_influence_legacy_1_name: "Властная Динамика"
+bld_influence_legacy_2_name: "Проницательный"
+bld_influence_legacy_3_name: "Хитрый"
+bld_influence_legacy_4_name: "Популярная Персона"
+bld_influence_legacy_5_name: "Надёжный"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "Торговля"
+bld_mercantile_legacy_track_desc: "Торговля предлагает и золото, и связи"
+bld_mercantile_legacy_1_name: "Международная Торговля"
+bld_mercantile_legacy_2_name: "Ремесленники"
+bld_mercantile_legacy_3_name: "Охраняемые Дороги"
+bld_mercantile_legacy_4_name: "Инвесторы"
+bld_mercantile_legacy_5_name: "Установленные Маршруты"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "Мореплавание"
+bld_seafaring_legacy_track_desc: "Плавать по бескрайним морям — значит быть связанным со всем миром"
+bld_seafaring_legacy_1_name: "Морские Ноги"
+bld_seafaring_legacy_2_name: "Бывалый Путешественник"
+bld_seafaring_legacy_3_name: "Морские Бризы"
+bld_seafaring_legacy_4_name: "Морское Право"
+bld_seafaring_legacy_5_name: "Щедрые Моря"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "Искушение"
+bld_temptation_legacy_track_desc: "Похоть, любовь и прекрасные вещи в жизни"
+bld_temptation_legacy_1_name: "Плодотворные Труды"
+bld_temptation_legacy_2_name: "Домашний Уют"
+bld_temptation_legacy_3_name: "Плодовитый Флирт"
+bld_temptation_legacy_4_name: "Утончённый Вкус"
+bld_temptation_legacy_5_name: "Сладкая Коррупция"
+max_seduce_schemes_add: "Макс. Интриг Соблазнения"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "Традиция"
+bld_tradition_legacy_track_desc: "Непреклонные обычаи и ритуалы поддерживают силу дома"
+bld_tradition_legacy_1_name: "Стойкий"
+bld_tradition_legacy_2_name: "Единый Фронт"
+bld_tradition_legacy_3_name: "Традиционный"
+bld_tradition_legacy_4_name: "Единомышленник"
+bld_tradition_legacy_5_name: "Утверждённый"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "Колдовство"
+bld_witchcraft_legacy_track_desc: "Оккультное, тайное и загадки самой жизни"
+bld_witchcraft_legacy_1_name: "Нечестивые Обряды"
+bld_witchcraft_legacy_2_name: "Посвящение"
+bld_witchcraft_legacy_3_name: "Колдовские Изучения"
+bld_witchcraft_legacy_4_name: "Потусторонняя Аура"
+bld_witchcraft_legacy_5_name: "Тёмный Мистицизм"
+max_convert_to_witchcraft_schemes_add: "Макс. Интриг Обращения в Колдовство"
+convert_to_witchcraft_scheme_phase_duration_add: "Длительность Фазы Обращения в Колдовство"

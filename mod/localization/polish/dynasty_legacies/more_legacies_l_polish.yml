@@ -1,0 +1,94 @@
+﻿l_polish:
+
+# Chivalry Legacy
+bld_chivalry_legacy_track_desc: "Posłuszeństwo, honor i szlachetny duch wojownika"
+bld_chivalry_legacy_1_name: "Romantyczny"
+bld_chivalry_legacy_2_name: "Dzielny"
+bld_chivalry_legacy_3_name: "Poetycki"
+bld_chivalry_legacy_4_name: "Galant"
+bld_chivalry_legacy_5_name: "Bohaterski"
+bld_chivalry_legacy_track_name: "Rycerskość"
+
+# Devotion Legacy
+bld_devotion_legacy_track_name: "Pobożność"
+bld_devotion_legacy_track_desc: "Dewocja, szacunek i opieka nad miejscami świętymi"
+bld_devotion_legacy_1_name: "Sprawiedliwy"
+bld_devotion_legacy_2_name: "Czciciel"
+bld_devotion_legacy_3_name: "Uświęcony"
+bld_devotion_legacy_4_name: "Niezłomny"
+bld_devotion_legacy_5_name: "Żarliwy"
+
+# Dominance Legacy
+bld_dominance_legacy_track_name: "Dominacja"
+bld_dominance_legacy_track_desc: "Siła, potęga i panowanie nad słabymi"
+bld_dominance_legacy_1_name: "Bezwzględny"
+bld_dominance_legacy_2_name: "Uciskający"
+bld_dominance_legacy_3_name: "Mroczne Plotki"
+bld_dominance_legacy_4_name: "Zastraszający"
+bld_dominance_legacy_5_name: "Brutalny"
+
+# Industry Legacy
+bld_industry_legacy_track_name: "Pracowitość"
+bld_industry_legacy_track_desc: "Postęp, innowacja i nieustanny rozwój ku nowemu"
+bld_industry_legacy_1_name: "Szczere Wysiłki"
+bld_industry_legacy_2_name: "Ciągłe Doskonalenie"
+bld_industry_legacy_3_name: "Wiecznie Uczący się"
+bld_industry_legacy_4_name: "Skrupulatny"
+bld_industry_legacy_5_name: "Wytrwałość"
+
+# Influence Legacy
+bld_influence_legacy_track_name: "Wpływ"
+bld_influence_legacy_track_desc: "Sekrety, luki prawne i subtelna, lecz niepodważalna kontrola"
+bld_influence_legacy_1_name: "Dynamika Władzy"
+bld_influence_legacy_2_name: "Sprytny"
+bld_influence_legacy_3_name: "Przebiegły"
+bld_influence_legacy_4_name: "Popularna Persona"
+bld_influence_legacy_5_name: "Godny Zaufania"
+
+# Mercantile Legacy
+bld_mercantile_legacy_track_name: "Kupiecki"
+bld_mercantile_legacy_track_desc: "Handel oferuje zarówno złoto, jak i połączenia"
+bld_mercantile_legacy_1_name: "Handel Międzynarodowy"
+bld_mercantile_legacy_2_name: "Rzemieślnicy"
+bld_mercantile_legacy_3_name: "Strzeżone Drogi"
+bld_mercantile_legacy_4_name: "Inwestorzy"
+bld_mercantile_legacy_5_name: "Ugruntowane Szlaki"
+
+# Seafaring Legacy
+bld_seafaring_legacy_track_name: "Żeglarski"
+bld_seafaring_legacy_track_desc: "Żeglowanie po rozległych morzach to połączenie z całym światem"
+bld_seafaring_legacy_1_name: "Morskie Nogi"
+bld_seafaring_legacy_2_name: "Doświadczony Podróżnik"
+bld_seafaring_legacy_3_name: "Morskie Bryzy"
+bld_seafaring_legacy_4_name: "Prawo Morskie"
+bld_seafaring_legacy_5_name: "Obfite Morza"
+
+# Temptation Legacy
+bld_temptation_legacy_track_name: "Pokusa"
+bld_temptation_legacy_track_desc: "Pożądanie, miłość i przyjemności życia"
+bld_temptation_legacy_1_name: "Owocne Trudy"
+bld_temptation_legacy_2_name: "Domowe Wygody"
+bld_temptation_legacy_3_name: "Płodny Flirciarz"
+bld_temptation_legacy_4_name: "Wyrafinowany Gust"
+bld_temptation_legacy_5_name: "Słodka Korupcja"
+max_seduce_schemes_add: "Maks. Intryg Uwodzenia"
+
+# Tradition Legacy
+bld_tradition_legacy_track_name: "Tradycja"
+bld_tradition_legacy_track_desc: "Nieugięte zwyczaje i rytuały podtrzymują siłę rodu"
+bld_tradition_legacy_1_name: "Trwały"
+bld_tradition_legacy_2_name: "Zjednoczony Front"
+bld_tradition_legacy_3_name: "Zwyczajowy"
+bld_tradition_legacy_4_name: "Podobnie Myślący"
+bld_tradition_legacy_5_name: "Ugruntowany"
+
+# Witchcraft Legacy
+bld_witchcraft_legacy_track_name: "Czary"
+bld_witchcraft_legacy_track_desc: "Okultyzm, arkana i tajemnice samego życia"
+bld_witchcraft_legacy_1_name: "Bluźniercze Rytuały"
+bld_witchcraft_legacy_2_name: "Inicjacja"
+bld_witchcraft_legacy_3_name: "Studia Czarów"
+bld_witchcraft_legacy_4_name: "Nieziemska Aura"
+bld_witchcraft_legacy_5_name: "Mroczny Mistycyzm"
+max_convert_to_witchcraft_schemes_add: "Maks. Intryg Nawrócenia na Czary"
+convert_to_witchcraft_scheme_phase_duration_add: "Czas Trwania Fazy Nawrócenia na Czary"
