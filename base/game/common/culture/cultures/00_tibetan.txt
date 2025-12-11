@@ -21,7 +21,7 @@
 	house_coa_frame = house_frame_28
 
 	ethnicities = {
-		10 = asian_tibetan
+		100 = asian_tibetan
 	}
 }
 
@@ -47,7 +47,7 @@ zhangzhung = { # Zhangzhung
 	house_coa_frame = house_frame_28
 
 	ethnicities = {
-		10 = asian_tibetan
+		100 = asian_tibetan
 	}
 }
 
@@ -74,7 +74,7 @@ sumpa = { # Sumpa
 	house_coa_frame = house_frame_28
 
 	ethnicities = {
-		10 = asian_tibetan
+		100 = asian_tibetan
 	}
 }
 
@@ -101,7 +101,7 @@ tsangpa = { # Western and Southern Tibetic (Sherpa; Kyirong-Kagate; etc.)
 	house_coa_frame = house_frame_28
 
 	ethnicities = {
-		10 = asian_tibetan
+		100 = asian_tibetan
 	}
 }
 
@@ -127,7 +127,7 @@ kirati = { # Kirati (Kirati; Limbu; Magar; etc.)
 	house_coa_frame = house_frame_28
 
 	ethnicities = {
-		10 = asian_tibetan
+		100 = asian_tibetan
 	}
 }
 
@@ -155,6 +155,6 @@ lhomon = { # Lhomon (Monpa; Lhoba; Kho-Bwa; Mishmi; Memba; etc.)
 	house_coa_frame = house_frame_28
 
 	ethnicities = {
-		10 = asian_tibetan
+		100 = asian_tibetan
 	}
 }

@@ -4,7 +4,7 @@
  imperial_examination.1000.t: "Rassemblement des candidats"
  imperial_examination.1000.desc: "J’entre dans la ville de [ROOT.Char.GetCurrentLocation.GetName] et vois ses rues balayées et luxueusement décorées pour notre arrivée. Les gens s’inclinent et murmurent des prières de bonne fortune à notre passage, tandis que des paris se font dans les coins.\n\nPartout où je regarde, je vois d’autres candidats vêtus de leurs plus beaux habits de soie se rendre dans les tavernes locales avec leurs courtisanes. Aujourd’hui, je vais découvrir jusqu’où je suis prêt[ROOT.Char.Custom('FR_E')] à aller."
  imperial_examination.1000.a: "Je réussirai quoi qu’il arrive !"
- imperial_examination.1000.a.tt: "Vous aurez plus d’occasions de tricher.\n@alert_icon! #alert_trial Vous risquez de vous faire prendre !#!"
+ imperial_examination.1000.a.tt: "Vous aurez plus d’occasions de tricher\n@alert_icon! #alert_trial Vous risquez de vous faire prendre !#! #weak (si vous ne vous faites pas repérer, vous gagnerez le [secret|El] de #V $secret_exam_cheater|l$#!)#!"
  imperial_examination.1000.b: "Je souhaite prouver ma valeur de manière honorable."
  #Host
  imperial_examination.1001.t: "$imperial_examination.1000.t$"
@@ -14,7 +14,7 @@
  imperial_examination.1002.t: "$imperial_examination.1000.t$"
  imperial_examination.1002.desc: "J’arrive dans la ville de [ROOT.Char.GetCurrentLocation.GetName] avec m[ROOT.Char.Custom2('FR_RelationToMeShort_OnA', candidate )], [candidate.Custom('FR_le_Char_Pi')][candidate.GetTitledFirstName]. Les rues ont été balayées et luxueusement décorées pour notre arrivée.\n\nDès qu’[candidate.Custom('FR_IlElle')] se retirera dans les logements réservés aux candidats, je n’aurai plus guère d’influence sur ses progrès. Je devrais peut-être lui donner quelques conseils."
  imperial_examination.1002.a: "« Réussissez à tout prix, [candidate.GetFirstNameNoTooltip]. »"
- imperial_examination.1002.a.tt: "[candidate.GetFirstNameNoTooltip] aura plus d’occasions de tricher.\n@alert_icon! #alert_trial [candidate.Custom('FR_IlElle')|U] risque de se faire prendre !#!"
+ imperial_examination.1002.a.tt: "[candidate.GetFirstNameNoTooltip] aura plus d’occasions de tricher\n@alert_icon! #alert_trial [candidate.Custom('FR_IlElle')|U] risque de se faire prendre !#! #weak ([candidate.Custom('FR_SilSielle')] ne se fait pas repérer, [candidate.Custom('FR_IlElle')] gagnera le [secret|El] de #V $secret_exam_cheater|l$#!)#!"
  imperial_examination.1002.b: "« Ne faites pas honte à la Maison [ROOT.Char.GetHouse.GetNameNoTooltip]. »"
  imperial_examination.1003.t: "$imperial_examination.1000.t$"
  imperial_examination.1003.desc: "J’entre dans la ville de [ROOT.Char.GetCurrentLocation.GetName] les bras chargés de parchemins d’apprentissage et de matériel d’étude.\n\n"

@@ -1587,7 +1587,7 @@
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_com_01: "@allunderheaven_icon! Штаны китайского простолюдина"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_01: "@allunderheaven_icon! Обувь ханьфу 1"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_02: "@allunderheaven_icon! Обувь ханьфу 2"
- PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! Обувь ханфу высшей знати, тип 1"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! Обувь ханьфу высшей знати 1"
  #Female
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_01: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_01$"
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_02: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_02$"
@@ -1688,7 +1688,7 @@
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_war_nob_02_hi: "@allunderheaven_icon! Кабуто с кувагатой"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_rel_tgp_shinto_priest: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_nob_01$"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_com_01: "@allunderheaven_icon! Наэ-эбоси"
- PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_japanese_face_mask: "Камакурская демоническая маска"
+ PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_japanese_face_mask: "Демоническая маска Камакуры"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_rel_tgp_shinto_priest: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_nob_01$"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_japanese_war_nob_01: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_war_nob_01$"
@@ -1701,31 +1701,29 @@
  #Male
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Сампот и золотые украшения для тела"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Сампот и золотые украшения"
- PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Сампот чонг кбен простолюдина"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Сампот чанг кбен простолюдина"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Сампот Теп Апсара"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Сампот храмовой танцовщицы-апсары"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02$"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Сампот кхмерской королевы с украшениями"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Сампот простолюдина со сбаем"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! Сампот Чанг Самлуй простолюдина"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Сампот кхмерской царицы с самоцветами"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Сампот простолюдина со сбаи"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! Сампот чанг самлуй простолюдина"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Корона кхмерского дворянина"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! Золотая макута кхмеров"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! Бронзовая макута кхмеров"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Макута хранителя храма с каффами"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! Макута хранителя храма"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! Кхмерский золотой монгкут"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! Кхмерский бронзовый монгкут"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Монгкут храмового стража с каффами"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! Монгкут храмового стража"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Корона апсары"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Макута наги"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Макута"
-
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Монгкут"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Нага монгкут"
  ### legwear ###
- # Male
+ #Male
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_southeast_com_01: "@allunderheaven_icon! Кбен простолюдина"
- 
  ### Hairstyles ###
  PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! Прическа апсары 1"
  PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! Прическа апсары 2"
@@ -1744,16 +1742,22 @@
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! Роба корейского чиновника высокого ранга 1"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! Роба корейского чиновника высокого ранга 2"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! Мёнбок корейского короля"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! Роба корейского простолюдина"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! Роба корейского дворянина"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_lo: "@allunderheaven_icon! Одеяние корейской придворной дамы 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_lo: "@allunderheaven_icon! Одеяние корейской придворной дамы 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! Одеяние знатной корейской придворной дамы 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! Одеяние знатной корейской придворной дамы 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! Роба дии корейской императрицы"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! Платье корейской простолюдинки"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! Платье корейской дворянки"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_imp_01: "@allunderheaven_icon! Корона династии Корё"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! Муллагон"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! Шляпа-муллагон 1"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_02: "@allunderheaven_icon! Шляпа-муллагон 2"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_com_01: "@allunderheaven_icon! Шляпа-муллагон простолюдина"
  #############
  ### Pants ###
  #############

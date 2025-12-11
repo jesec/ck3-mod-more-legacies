@@ -278,8 +278,9 @@
  innovation_fire_medicine_desc: "生命の謎を究明しようとして、死しか生み出さないものを発見することがある。火の薬は硫黄、硝石、可燃性物質を組み合わせた強力な混合物であり、まるで爆発するかのように激しく燃える必殺の炎を作り出す。"
  innovation_champa_rice: "占城稲"
  innovation_champa_rice_desc: "米は多大な時間と水を必要とするが、チャンパの米は例外である。この品種はほかのどの品種よりも成長が早く、干ばつに強く、収穫量も多い。場合によっては、一年に二回も収穫できる。適切な管理の下、この米は農場を活性化させ、人口増加を加速させることができる。"
- culture_parameter_champa_rice_wet_land_paddies: "[GetBuilding('paddy_fields_01').GetTypeName|V]系の[buildings|E]を[GetTerrain( 'wetlands' ).GetName]に建設可能"
+ culture_parameter_champa_rice_wet_land_paddies: "[GetBuilding('paddy_fields_01').GetTypeName|V]および[GetBuilding('farm_estates_01').GetTypeName|V]系の[buildings|E]を[GetTerrain( 'wetlands' ).GetName]に建設可能"
  culture_parameter_champa_rice_building_bonuses: "[GetBuilding('paddy_fields_01').GetTypeName|V]系の[buildings|E]が追加ボーナスを与える"
+ building_paddy_fields_requirement_terrain_tt: "以下のいずれか：\n$EFFECT_LIST_BULLET$[province|E]が[GetTerrain( 'terraced_hills' ).GetName]である\n$EFFECT_LIST_BULLET$[province|E]が[GetTerrain( 'floodplains' ).GetName]であり、かつ[GetGeographicalRegion('paddy_fields_region').GetName][region|E]にある\n$EFFECT_LIST_BULLET$[province|E]が[GetTerrain( 'wetlands' ).GetName]であり、かつ[culture|E]に[innovation|E]「#V $innovation_champa_rice$#!」がある\n$EFFECT_LIST_BULLET$[province|E]が[GetTerrain( 'hills' ).GetName]または[GetTerrain( 'jungle' ).GetName]であり、かつ[culture|E]に[tradition|E]「[GetCultureTradition('tradition_tgp_rice_cultivators').GetName|V]」がある"
  innovation_sericulture: "養蚕"
  innovation_sericulture_desc: "絹生産の技術は複雑だが、非常に見返りが多く、その知識はこの産業における職人技術で利益を得る人々によって固く守られている。"
  culture_parameter_unlocks_silk_buildings_parameter: "[GetDomicileBuilding('silk_01').GetNameNoTooltip|V]系の[domicile_buildings|E]をアンロック"
@@ -338,3 +339,6 @@
  unlock_maa_bombard: "[GetMaA('bombard').GetName]を[men_at_arms|E]に採用できる"
  unlock_maa_trebuchet: "[GetMaA('trebuchet').GetName]を[men_at_arms|E]に採用できる"
  unlock_maa_mangonel: "[GetMaA('mangonel').GetName]を[men_at_arms|E]に採用できる"
+ innovation_tiefutu: "$tiefutu$"
+ innovation_tiefutu_desc: "$tiefutu_flavor$"
+ 

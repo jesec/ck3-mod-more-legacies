@@ -1587,7 +1587,7 @@
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_com_01: "@allunderheaven_icon! 中国の平民の脚衣"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_01: "@allunderheaven_icon! 漢服の靴タイプ1"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_02: "@allunderheaven_icon! 漢服の靴タイプ2"
- PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! 漢服の上級貴族用靴1型"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! 漢服の高貴な靴タイプ1"
  #Female
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_01: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_01$"
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_02: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_02$"
@@ -1701,33 +1701,29 @@
  #Male
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon! サンポットと黄金の身体装飾"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! サンポットと黄金の装飾"
- PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 庶民のサンポット・チョン・クベン"
-
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 平民のサンポット・チョン・クベン"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon! サンポット・テプ・アプサラ"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! サンポットと寺院の踊り子のアプサラ"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02$"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! クメール女王のサンポット（宝飾付き）"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 庶民のサンポット（スバイ付き）"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! 庶民のサンポット・チャン・サムルイ"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! クメール女王の宝石付きサンポット"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 平民のスバイ付きサンポット"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! 平民のサンポット・チャン・サムルイ"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! クメール貴族の冠"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! クメールの黄金のマクタ"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! クメールの青銅のマクタ"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 寺院守護者のマクタ（耳飾り付き）"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! 寺院守護者のマクタ"
-
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 耳飾り付きの神殿の守護者マクタ"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! 神殿の守護者マクタ"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! アプサラの冠"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! ナーガ・マクタ"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! マクタ"
-
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! ナガ・マクタ"
  ### legwear ###
- # Male
+ #Male
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_southeast_com_01: "@allunderheaven_icon! 平民のクベン"
-
  ### Hairstyles ###
  PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! アプサラの髪型1"
  PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! アプサラの髪型2"
@@ -1746,16 +1742,22 @@
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! 韓国の上級官人のローブ1"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! 韓国の上級官人のローブ2"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! 韓国王の冕服"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! 韓国の平民のローブ"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! 韓国の貴族のローブ"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_lo: "@allunderheaven_icon! 韓国の宮廷女官の衣装1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_lo: "@allunderheaven_icon! 韓国の宮廷女官の衣装2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! 韓国の高位の宮廷女官の衣装1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! 韓国の高位の宮廷女官の衣装2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! 韓国の皇后の翟衣"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! 韓国の平民女性のドレス"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! 韓国の貴族女性のドレス"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_imp_01: "@allunderheaven_icon! 高麗王朝の冠"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! 文羅巾"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! 文羅巾帽子1"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_02: "@allunderheaven_icon! 文羅巾帽子2"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_com_01: "@allunderheaven_icon! 平民の文羅巾帽子 "
  #############
  ### Pants ###
  #############

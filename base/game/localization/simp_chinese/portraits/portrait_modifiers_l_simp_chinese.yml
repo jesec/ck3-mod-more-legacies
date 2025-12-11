@@ -1571,7 +1571,7 @@
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_com_02: "@allunderheaven_icon!简易汉服帽"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_roy_01: "@allunderheaven_icon!貂蝉冠" #Mink's Tail and Cicada's Wing Crown
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_02_mask: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_02$（$maskface_mask$）" #Phoenix Wing Helmet
- PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_chinese_face_mask: "恶魔铁面具"
+ PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_chinese_face_mask: "铁制鬼面"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_chinese_imp_01: "@allunderheaven_icon!皇后凤冠" #Fengguan
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_chinese_war_nob_01_lo: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_01_lo$"
@@ -1587,7 +1587,7 @@
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_com_01: "@allunderheaven_icon!中华平民下装"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_01: "@allunderheaven_icon!汉服鞋履类型 1"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_02: "@allunderheaven_icon!汉服鞋履类型 2"
- PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! 汉服高等贵族鞋 1型"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon!汉服高级贵族鞋履类型 1"
  #Female
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_01: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_01$"
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_02: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_02$"
@@ -1688,7 +1688,7 @@
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_war_nob_02_hi: "@allunderheaven_icon!锹形附兜"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_rel_tgp_shinto_priest: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_nob_01$"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_com_01: "@allunderheaven_icon!萎乌帽子"
- PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_japanese_face_mask: "镰仓恶魔面具"
+ PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_japanese_face_mask: "镰仓鬼面"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_rel_tgp_shinto_priest: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_nob_01$"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_japanese_war_nob_01: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_war_nob_01$"
@@ -1701,40 +1701,37 @@
  #Male
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon!干缦和贴身金首饰"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon!干缦和金饰"
- PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 平民的崇格本式桑波特"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon!平民绊尾缦"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon!飞天干缦"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon!寺庙飞天舞者干缦"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02$"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! 高棉女王的桑波特配珠宝"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 平民的桑波特与斯拜披帛"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! 平民的长萨姆鲁伊式桑波特"
-
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon!吉蔑女王首饰干缦"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon!平民干缦及肩带"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon!平民垂缦"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon!吉蔑贵族冠冕"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! 高棉金制马库塔"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! 高棉青铜马库塔"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 寺庙守护者的玛库塔冠带耳夹"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! 寺庙守护者的玛库塔冠"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon!吉蔑黄金天冠"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon!吉蔑青铜天冠"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon!神庙守卫天冠及耳夹"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon!神庙守卫天冠"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon!飞天冠"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! 那伽玛库塔冠"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 玛库塔冠"
-
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon!天冠"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon!那伽天冠"
  ### legwear ###
- # Male
- PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_southeast_com_01: "@allunderheaven_icon! 平民的克本"
-
+ #Male
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_southeast_com_01: "@allunderheaven_icon!平民插尾裙"
  ### Hairstyles ###
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! 阿普萨拉发型 1"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! 阿普萨拉发型 2"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03: "@allunderheaven_icon! 阿普萨拉发型 3"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01_common: "@allunderheaven_icon! 阿普萨拉发型 4"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02_common: "@allunderheaven_icon! 阿普萨拉发型 5"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03_common: "@allunderheaven_icon! 阿普萨拉发型 6"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_04: "@allunderheaven_icon! 阿普萨拉发型 7"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon!飞天发型 1"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon!飞天发型 2"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03: "@allunderheaven_icon!飞天发型 3"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01_common: "@allunderheaven_icon!飞天发型 4"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02_common: "@allunderheaven_icon!飞天发型 5"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03_common: "@allunderheaven_icon!飞天发型 6"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_04: "@allunderheaven_icon!飞天发型 7"
  ##################################
  ###  TGP Korean  ###
  ##################################
@@ -1745,16 +1742,22 @@
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon!高丽高阶官员长袍 1"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon!高丽高阶官员长袍 2"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon!高丽国王冕服"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon!高丽平民长袍"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon!高丽贵族长袍"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_lo: "@allunderheaven_icon!高丽仕女装束 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_lo: "@allunderheaven_icon!高丽仕女装束 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon!高丽高阶仕女装束 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon!高丽高阶仕女装束 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon!高丽王后翟衣"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon!高丽平民妇女连衣裙"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon!高丽贵族妇女连衣裙"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_imp_01: "@allunderheaven_icon!高丽王朝冠"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon!文罗巾"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon!文罗巾 1"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_02: "@allunderheaven_icon!文罗巾 2"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_com_01: "@allunderheaven_icon!平民文罗巾"
  #############
  ### Pants ###
  #############

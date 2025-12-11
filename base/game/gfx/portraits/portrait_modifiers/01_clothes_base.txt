@@ -3285,6 +3285,27 @@ fp3_iranian_high_nobles = {
 		}
 	}
 
+	khmer_royalty_clothes = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = tgp_southeast_royalty_clothes
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_royalty_trigger = {
+					CULTURE_INPUT = southeast_asian
+				}
+				has_tgp_dlc_trigger = yes
+			}
+		}
+	}
+
 	## TGP - Ainu ##
 
 	ainu_commoner_clothes = {

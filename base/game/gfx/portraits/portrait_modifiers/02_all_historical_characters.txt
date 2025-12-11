@@ -4255,31 +4255,6 @@
 		}
 	}
 
-	# Harald Fairhair's hair when it ain't so fair.
-	harald_tanglehair = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = hairstyles
-				template = scripted_character_hairstyles_01
-				accessory = male_hair_northern_01
-			}
-		}
-		outfit_tags = { male_hair_northern_01 }
-		weight = {
-			base = 0
-			modifier = {
-				add = 1000
-				exists = this
-				OR = {
-					has_character_modifier = harald_tanglehairs_vow_modifier
-					has_character_modifier = harald_tanglehairs_reminder_modifier
-					has_character_modifier = harald_tanglehairs_vow_broken_modifier
-				}
-			}
-		}
-	}
-
 	# Wards and Wardens special easter egg character
 	uzluk_of_narim_start = {
 		dna_modifiers = {
@@ -4393,6 +4368,7 @@
 			}
 		}
 	}
+	# Harald Fairhair's hair when it ain't so fair.
 	144000_haraldr_vestfold = {
 		dna_modifiers = {
 			accessory = {
@@ -4415,6 +4391,42 @@
 				exists = this
 				exists = character:144000
 				this = character:144000
+				OR = {
+					has_character_modifier = harald_tanglehairs_vow_modifier
+					has_character_modifier = harald_tanglehairs_reminder_modifier
+					has_character_modifier = harald_tanglehairs_vow_broken_modifier
+				}
+			}
+		}
+	}
+	# Harald Fairhair's hair when it is fair.
+	144000_haraldr_vestfold = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = all_hairstyles
+				accessory = male_hair_northern_03
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp1_beards_straight
+				accessory = male_beard_fp1_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:144000
+				this = character:144000
+				NOR = {
+					has_character_modifier = harald_tanglehairs_vow_modifier
+					has_character_modifier = harald_tanglehairs_reminder_modifier
+					has_character_modifier = harald_tanglehairs_vow_broken_modifier
+				}
 			}
 		}
 	}
@@ -8767,6 +8779,26 @@
 				exists = this
 				exists = character:japanese_fujiwara_9
 				this = character:japanese_fujiwara_9
+			}
+		}
+	}
+
+	japanese_fujiwara_530 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = tgp_chinese_beards
+				accessory = m_beard_tgp_chinese_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				exists = this
+				exists = character:japanese_fujiwara_530
+				this = character:japanese_fujiwara_530
 			}
 		}
 	}

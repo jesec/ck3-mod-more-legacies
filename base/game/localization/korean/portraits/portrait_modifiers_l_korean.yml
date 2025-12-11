@@ -1571,7 +1571,7 @@
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_com_02: "@allunderheaven_icon! 단순한 한푸 모자"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_roy_01: "@allunderheaven_icon! 표선관모" #Mink's Tail and Cicada's Wing Crown
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_02_mask: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_02$ ($maskface_mask$)" #Phoenix Wing Helmet
- PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_chinese_face_mask: "악마의 철 가면"
+ PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_chinese_face_mask: "마귀 철가면"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_chinese_imp_01: "@allunderheaven_icon! 황후봉관" #Fengguan
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_chinese_war_nob_01_lo: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_01_lo$"
@@ -1587,7 +1587,7 @@
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_com_01: "@allunderheaven_icon! 중국 평민의 바지"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_01: "@allunderheaven_icon! 한푸 신발 유형 1"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_02: "@allunderheaven_icon! 한푸 신발 유형 2"
- PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! 한푸 상급 귀족 신발 1형"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! 한푸 고위 귀족 신발 유형 1"
  #Female
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_01: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_01$"
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_02: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_02$"
@@ -1688,7 +1688,7 @@
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_war_nob_02_hi: "@allunderheaven_icon! 카부토와 쿠와가타"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_rel_tgp_shinto_priest: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_nob_01$"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_com_01: "@allunderheaven_icon! 나에에보시"
- PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_japanese_face_mask: "가마쿠라 악마 가면"
+ PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_japanese_face_mask: "가마쿠라 마귀 가면"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_rel_tgp_shinto_priest: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_nob_01$"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_japanese_war_nob_01: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_japanese_war_nob_01$"
@@ -1707,34 +1707,31 @@
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 사원 무희 압사라의 삼폿"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02$"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! 크메르 여왕의 보석 장식 삼폿"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! 크메르 여왕의 삼폿과 장신구"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! 평민의 삼폿과 스바이"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! 평민의 삼폿 창 삼루이"
-
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! 크메르 귀족의 관"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! 크메르의 황금 마쿠타"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! 크메르의 청동 마쿠타"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 사원 수호자의 귀커프 장식 마쿠타"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! 크메르 금빛 마쿠타"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! 크메르 청동 마쿠타"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 사원 수호자의 마쿠타와 귀걸이"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! 사원 수호자의 마쿠타"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! 압사라 왕관"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! 나가 마쿠타"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! 마쿠타"
-
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! 나가 마쿠타"
  ### legwear ###
- # Male
+ #Male
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_southeast_com_01: "@allunderheaven_icon! 평민의 크벤"
-
  ### Hairstyles ###
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! 압사라 헤어스타일 1"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! 압사라 헤어스타일 2"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03: "@allunderheaven_icon! 압사라 헤어스타일 3"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01_common: "@allunderheaven_icon! 압사라 헤어스타일 4"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02_common: "@allunderheaven_icon! 압사라 헤어스타일 5"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03_common: "@allunderheaven_icon! 압사라 헤어스타일 6"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_04: "@allunderheaven_icon! 압사라 헤어스타일 7"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! 압사라 머리 모양 1"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! 압사라 머리 모양 2"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03: "@allunderheaven_icon! 압사라 머리 모양 3"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01_common: "@allunderheaven_icon! 압사라 머리 모양 4"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02_common: "@allunderheaven_icon! 압사라 머리 모양 5"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03_common: "@allunderheaven_icon! 압사라 머리 모양 6"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_04: "@allunderheaven_icon! 압사라 머리 모양 7"
  ##################################
  ###  TGP Korean  ###
  ##################################
@@ -1745,16 +1742,22 @@
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! 한국 고위 관리의 로브 1"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! 한국 고위 관리의 로브 2"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! 한국 왕의 면복"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! 한국 평민의 로브"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! 한국 귀족의 로브"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_lo: "@allunderheaven_icon! 한국 궁녀의 의복 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_lo: "@allunderheaven_icon! 한국 궁녀의 의복 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! 고귀한 한국 궁녀의 의복 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! 고귀한 한국 궁녀의 의복 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! 한국 황후의 적의 로브"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! 한국 평민 여성의 드레스"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! 한국 귀족 여성의 드레스"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_imp_01: "@allunderheaven_icon! 고려 왕조 왕관"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! 문라건"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! 문라건 모자 1"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_02: "@allunderheaven_icon! 문라건 모자 2"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_com_01: "@allunderheaven_icon! 문라건 평민의 모자"
  #############
  ### Pants ###
  #############

@@ -1571,7 +1571,7 @@
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_com_02: "@allunderheaven_icon! Zwykły kapelusz hanfu"
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_roy_01: "@allunderheaven_icon! Korona diaochanguan" #Mink's Tail and Cicada's Wing Crown
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_02_mask: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_02$ ($maskface_mask$)" #Phoenix Wing Helmet
- PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_chinese_face_mask: "Demoniczna żelazna maska"
+ PORTRAIT_MODIFIER_custom_special_masks_m_headgear_sec_tgp_chinese_face_mask: "Demoniczna maska z żelaza"
  #Female
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_chinese_imp_01: "@allunderheaven_icon! Korona cesarzowej z feniksem" #Fengguan
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_chinese_war_nob_01_lo: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_chinese_war_nob_01_lo$"
@@ -1587,7 +1587,7 @@
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_com_01: "@allunderheaven_icon! Nogawice chińskiego plebejusza"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_01: "@allunderheaven_icon! Buty hanfu rodzaju 1"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_nob_02: "@allunderheaven_icon! Buty hanfu rodzaju 2"
- PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! Buty hanfu wysokiej szlachty, typ 1"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_hi_nob_01: "@allunderheaven_icon! Buty hanfu wysokiej szlachty rodzaju 1"
  #Female
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_01: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_01$"
  PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_tgp_chinese_war_nob_02: "$PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_chinese_war_nob_02$"
@@ -1701,39 +1701,37 @@
  #Male
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Sampot ze złotą biżuterią"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Sampot ze złotą biżuterią"
- PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Sampot Chong Kben plebejusza"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Sampot chong kben plebejusza"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Sampot tep apsara"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Sampot świątynnej tancerki apsara"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02_hi: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_nob_02$"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Sampot królowej Khmerów z biżuterią"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Sampot plebejusza ze sbai"
- PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! Sampot Chang Samluy plebejusza"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Sampot królowej khmerskiej z biżuterią"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_01: "@allunderheaven_icon! Sampot plebejki ze sbai"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_southeast_com_02: "@allunderheaven_icon! Sampot chang samluy plebejki"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Korona khmerskiego szlachcica"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! Złota makuta Khmerów"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! Brązowa makuta Khmerów"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Makuta strażnika świątyni z nausznicami"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! Makuta strażnika świątyni"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_a: "@allunderheaven_icon! Złota makuta khmerska"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_roy_01_b: "@allunderheaven_icon! Makuta khmerska z brązu"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Makuta strażnika świątynnego z nausznicami"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_southeast_nob_03: "@allunderheaven_icon! Makuta strażnika świątynnego"
  #Female
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Korona Apsary"
- PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Makuta Nagi"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_01: "@allunderheaven_icon! Korona apsary"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_nob_02: "@allunderheaven_icon! Makuta"
-
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_tgp_southeast_roy_01: "@allunderheaven_icon! Makuta z nagą"
  ### legwear ###
- # Male
+ #Male
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_tgp_southeast_com_01: "@allunderheaven_icon! Kben plebejusza"
- 
  ### Hairstyles ###
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! Fryzura apsary 1"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! Fryzura apsary 2"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03: "@allunderheaven_icon! Fryzura apsary 3"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01_common: "@allunderheaven_icon! Fryzura apsary 4"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02_common: "@allunderheaven_icon! Fryzura apsary 5"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03_common: "@allunderheaven_icon! Fryzura apsary 6"
- PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_04: "@allunderheaven_icon! Fryzura apsary 7"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01: "@allunderheaven_icon! Fryzura w stylu apsary 1"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02: "@allunderheaven_icon! Fryzura w stylu apsary 2"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03: "@allunderheaven_icon! Fryzura w stylu apsary 3"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_01_common: "@allunderheaven_icon! Fryzura w stylu apsary 4"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_02_common: "@allunderheaven_icon! Fryzura w stylu apsary 5"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_03_common: "@allunderheaven_icon! Fryzura w stylu apsary 6"
+ PORTRAIT_MODIFIER_custom_hair_f_hair_tgp_sea_04: "@allunderheaven_icon! Fryzura w stylu apsary 7"
  ##################################
  ###  TGP Korean  ###
  ##################################
@@ -1744,16 +1742,22 @@
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! Szata koreańskiego urzędnika wysokiej rangi 1"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! Szata koreańskiego urzędnika wysokiej rangi 2"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! Myeonbok koreańskiego króla"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! Szata koreańskiego plebejusza"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! Szata koreańskiego szlachcica"
  #Female
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_lo: "@allunderheaven_icon! Strój koreańskiej damy dworu 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_lo: "@allunderheaven_icon! Strój koreańskiej damy dworu 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_01_hi: "@allunderheaven_icon! Strój wybitnej koreańskiej damy dworu 1"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_02_hi: "@allunderheaven_icon! Strój wybitnej koreańskiej damy dworu 2"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_imp_02: "@allunderheaven_icon! Szata diyi koreańskich cesarzowych"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_com_01: "@allunderheaven_icon! Suknia koreańskiej plebejuszki"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_tgp_korean_nob_03_lo: "@allunderheaven_icon! Suknia koreańskiej szlachcianki"
  ### Headgear ###
  #Male
  PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_imp_01: "@allunderheaven_icon! Korona dynastii Goryeo"
- PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! Munra-geon"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_01: "@allunderheaven_icon! Nakrycie głowy munra-geon 1"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_nob_02: "@allunderheaven_icon! Nakrycie głowy munra-geon 2"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_tgp_korean_com_01: "@allunderheaven_icon! Plebejskie nakrycie głowy munra-geon"
  #############
  ### Pants ###
  #############

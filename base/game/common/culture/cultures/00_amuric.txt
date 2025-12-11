@@ -25,6 +25,6 @@
 	house_coa_frame = house_frame_04
 
 	ethnicities = {
-		10 = asian_manchu_korean
+		100 = asian_manchu_korean
 	}
 }
