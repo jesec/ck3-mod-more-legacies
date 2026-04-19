@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$Erhöht die Güte finanzierter #V Kunsthandwerk-#!, #V Waffen-#!, #V Rüstungs-#! und #V Kunstschmied-#![inspirations|E]"
  royal_garden_effect_desc: "[SelectLocalization(HasDlcFeature('tours_and_tournaments'), 'royal_garden_effect_toto_desc', 'blank_line')]"
  leisure_palace_effect_desc: "[SelectLocalization(HasDlcFeature('tours_and_tournaments'), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc')]"
+ wedding_bonus_effect: "Erhöht die Belohnungen für „[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName]“-[activities|E], die in diesem [holding|E] veranstaltet werden"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$Erhöht die Belohnungen für „[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName]“-[activities|E], die in diesem [holding|E] veranstaltet werden"
  dragon_kiln_effect_desc: "[Concept('opinion', 'Meinungszuwachs')|E] durch „$gift_interaction|V$“: #P +50 %#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\nErhöht die Belohnungen für „[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName]“-[activities|E], die in diesem [holding|E] veranstaltet werden"

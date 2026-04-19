@@ -379,11 +379,14 @@
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_hi_nob_01: "@arctic_attire_icon! Sami-Hochadels-Gewandung 1"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_hi_nob_02: "@arctic_attire_icon! Sami-Hochadels-Gewandung 2"
  PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_travel_01: "@arctic_attire_icon! Sami-Fellmantel"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_roy_01: "@arctic_attire_icon! Sami-Königs-Gewandung 1"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_roy_02: "@arctic_attire_icon! Sami-Königs-Gewandung 2"
  ### Female ###
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp4_sami_com_01: "$PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_com_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp4_sami_lo_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_lo_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp4_sami_hi_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_hi_nob_01$"
  PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp4_sami_travel_01: "$PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp4_sami_travel_01$"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp4_sami_roy_01: "@arctic_attire_icon! Sami-Königs-Gewandung 1"
  ###################
  ### CCP4 Khanty ###
  ###################
@@ -1885,6 +1888,133 @@
  PORTRAIT_MODIFIER_custom_special_crowns_crests_f_headgear_ccp5_western_war_nob_crestEra3_01: "$PORTRAIT_MODIFIER_custom_special_crowns_crests_m_headgear_ccp5_western_war_nob_crestEra3_01$"
  PORTRAIT_MODIFIER_custom_special_crowns_crests_f_headgear_ccp5_western_war_nob_crestEra3_02: "$PORTRAIT_MODIFIER_custom_special_crowns_crests_m_headgear_ccp5_western_war_nob_crestEra3_02$"
  PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp5_western_war_nob_01: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp5_western_war_nob_01$"
+ ########################
+ ### CCP7 Emishi Ainu ###
+ ########################
+ ### Female ###
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_com_01: "@north_pacific_attire! Ainu-Gemeinen-Robe 1"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_com_02: "@north_pacific_attire! Ainu-Gemeinen-Robe 2"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_com_03: "@north_pacific_attire! Ainu-Gemeinen-Robe 3"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_01: "@north_pacific_attire! Ainu-Niederadels-Robe 1"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_02_a: "@north_pacific_attire! Ainu-Niederadels-Robe 2"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_02_b: "@north_pacific_attire! Ainu-Niederadels-Robe 2 mit Shitoki"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_03: "@north_pacific_attire! Ainu-Niederadels-Robe 3"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_hi_nob_01: "@north_pacific_attire! Ainu-Hochadels-Robe 1"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_hi_nob_02: "@north_pacific_attire! Ainu-Hochadels-Robe 2"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_hi_nob_03: "@north_pacific_attire! Ainu-Hochadels-Robe 3"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_roy_02: "@north_pacific_attire! Ainu-Königsrobe mit Shitoki"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_01_fish: "@north_pacific_attire! Emishi-Niederadels-Robe 2"
+ ### Male ###
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_com_01: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_com_01$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_com_02: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_com_02$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_com_03_fish: "@north_pacific_attire! Ostarktische Gemeinen-Robe (Fischhaut)"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_com_03_fur: "@north_pacific_attire! Ostarktische Gemeinen-Robe (Fell)"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_lo_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_01$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_lo_nob_02: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_lo_nob_02_a$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_lo_nob_03_fish: "@north_pacific_attire! Ainu-Niederadels-Robe (Fischhaut)"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_hi_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_hi_nob_01$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_hi_nob_01_emushi: "@north_pacific_attire! Ainu-Hochadels-Robe 1 mit Emushi"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_hi_nob_02: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_hi_nob_02$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_hi_nob_02_emushi: "@north_pacific_attire! Ainu-Hochadels-Robe 2 mit Emushi"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_roy_01: "@north_pacific_attire! Ainu-Königsrobe 1 mit Emushi"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_roy_02: "@north_pacific_attire! Ainu-Königsrobe 2 mit Emushi"
+ ### War ###
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_war_nob_01: "@north_pacific_attire! Emishi-Keikō"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_emishi_war_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_emishi_war_nob_01$"
+ ##################
+ ### CCP7 Nivkh ###
+ ##################
+ ### Female ###
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_nivkh_com_01: "@north_pacific_attire! Niwchen-Gemeinen-Robe 1"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_nivkh_com_01_lo_nob: "@north_pacific_attire! Niwchen-Niederadels-Robe 1"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_nivkh_nob_01_com: "@north_pacific_attire! Niwchen-Gemeinen-Robe 2"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_nivkh_lo_nob_01_fish: "@north_pacific_attire! Niwchen-Niederadels-Robe 2"
+ ### Male ###
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_nivkh_com_01: "@north_pacific_attire! Niwchen-Gemeinen-Robe"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_nivkh_lo_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_nivkh_nob_01_com$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_sec_ccp_nivkh_lo_nob_03_fish: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_sec_ccp_nivkh_lo_nob_01_fish$"
+ #########################################
+ ################ Headgear ###############
+ #########################################
+ ########################
+ ### CCP7 Emishi Ainu ###
+ ########################
+ ### Female ###
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_com_01: "@north_pacific_attire! Ostarktisches Gemeinen-Stirnband"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_com_02: "@north_pacific_attire! Ainu-Kapuze 1"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_com_03: "@north_pacific_attire! Ainu-Kapuze 2"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_01_com: "@north_pacific_attire! Gemeinen-Matampus 1"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_02_com: "@north_pacific_attire! Gemeinen-Matampus 2"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_03_com: "@north_pacific_attire! Gemeinen-Matampus 3"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_01: "@north_pacific_attire! Adeligen-Matampus 1"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_02: "@north_pacific_attire! Adeligen-Matampus 2"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_03: "@north_pacific_attire! Adeligen-Matampus 3"
+ ### Male ###
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_rel_ccp_emishi_com_01: "@north_pacific_attire! Sapanpe"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_com_01: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_com_01$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_com_02: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_com_02$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_com_03: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_com_03$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_nob_01_com: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_01_com$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_nob_02_com: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_02_com$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_nob_03_com: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_03_com$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_nob_01: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_01$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_nob_02: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_02$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_nob_03: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_nob_03$"
+ ### War ###
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_war_nob_01: "@north_pacific_attire! Emishi-Kabuto"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_emishi_war_nob_01: "$PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_emishi_war_nob_01$"
+ ##################
+ ### CCP7 Nivkh ###
+ ##################
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_nivkh_com_01: "@north_pacific_attire! Niwchen-Birkenrinden-Hut"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_sec_ccp_nivkh_com_01: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_sec_ccp_nivkh_com_01$"
+ #######################################
+ ################ Cloak ################
+ #######################################
+ ############
+ ### CCP7 ###
+ ############
+ PORTRAIT_MODIFIER_custom_cloaks_f_cloaks_sec_ccp_mino_com_01: "@north_pacific_attire! Strohkappe"
+ PORTRAIT_MODIFIER_custom_cloaks_m_cloaks_sec_ccp_mino_com_01: "$PORTRAIT_MODIFIER_custom_cloaks_f_cloaks_sec_ccp_mino_com_01$"
+ ############
+ ### CCP9 ###
+ ############
+ ### Headgear ###
+ ### Female ###
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_lia_hi_01: "@celestial_court_attire! Kitanische Krone mit hohen Flügeln"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_lia_nob_01: "@celestial_court_attire! Liao-Adelshut"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_lia_lo_01: "@celestial_court_attire! Liao-Gemeinenhut"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_sil_roy_01: "@celestial_court_attire! Krone von Silla"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_min_nob_01: "@celestial_court_attire! Haarnadelkrone der Ming-Dynastie"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_uyg_roy_01: "@celestial_court_attire! Goldkrone der Uiguren"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_uyg_nob_01: "@celestial_court_attire! Adelsdamenkrone der Uiguren"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_tan_nob_01: "@celestial_court_attire! Tanguten-Adelsdamen-Hut"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_tan_roy_01: "@celestial_court_attire! Tanguten-Königshut"
+ PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_jur_nob_01: "@celestial_court_attire! Adelsdamen-Hut der Jin-Dynastie"
+ ### Male ###
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_dal_hi_01: "@celestial_court_attire! Dali-Hochadels-Krone"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_lia_hi_01: "@celestial_court_attire! Liao-Goldkrone"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_dal_lo_01: "@celestial_court_attire! Dali-Niederadelshut"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_sil_roy_01: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_sil_roy_01$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_uyg_roy_01: "$PORTRAIT_MODIFIER_custom_headgear_f_headgear_ccp9_uyg_roy_01$"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_uyg_hi_01: "@celestial_court_attire! Adelshut der Uiguren"
+ PORTRAIT_MODIFIER_custom_headgear_m_headgear_ccp9_jur_nob_01: "@celestial_court_attire! Adelshut der Jin-Dynastie"
+ ## Clothes ##
+ ### Female ###
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_lia_nob_01: "@celestial_court_attire! Liao-Adels-Gewandung"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_uyg_nob_01: "@celestial_court_attire! Uiguren-Hochadels-Robe"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_uyg_roy_01: "@celestial_court_attire! Uiguren-Königsrobe"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_tan_nob_01: "@celestial_court_attire! Tanguten-Hochadels-Gewandung"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_tan_roy_01: "@celestial_court_attire! Tanguten-Königsrobe"
+ PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_min_nob_01: "@celestial_court_attire! Ming-Adelskleid"
+ ### Male ###
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_ccp9_lia_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_lia_nob_01$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_ccp9_dal_nob_01: "@celestial_court_attire! Dali-Adels-Gewandung"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_ccp9_tan_nob_01: "$PORTRAIT_MODIFIER_custom_clothes_f_clothes_ccp9_tan_nob_01$"
+ PORTRAIT_MODIFIER_custom_clothes_m_clothes_ccp9_min_nob_01: "@celestial_court_attire! Ming-Adels-Gewandung"
+ ### Hairstyles ###
+ #Male
+ PORTRAIT_MODIFIER_custom_hair_m_hair_ccp9_uyg_nob_01: "@celestial_court_attire! Geflochtenes Uiguren-Haar"
  #############
  ### Pants ###
  #############
@@ -1919,6 +2049,15 @@
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_pol_common_01: "$PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_pol_common_01$"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp4_sami_com_01: "$PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp4_sami_com_01$"
  PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp4_khanty_com_01: "$PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp4_khanty_com_01$"
+ PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_emishi_com_01: "@north_pacific_attire! Ainu-Gemeinen-Beinbekleidung 1"
+ PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_emishi_com_02: "@north_pacific_attire! Ainu-Gemeinen-Beinbekleidung 2"
+ PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_emishi_nob: "@north_pacific_attire! Ainu-Adels-Beinbekleidung"
+ PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_nivkh_com_01: "@north_pacific_attire! Niwchen-Gemeinen-Beinbekleidung"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp_emishi_com_01: "$PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_emishi_com_01$"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp_emishi_com_02: "$PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_emishi_com_02$"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp_emishi_nob: "$PORTRAIT_MODIFIER_custom_legwear_f_legwear_sec_ccp_emishi_nob$"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp_nivkh_com_01: "@north_pacific_attire! Niwchen-Gemeinen-Beinbekleidung 1"
+ PORTRAIT_MODIFIER_custom_legwear_m_legwear_sec_ccp_nivkh_com_02: "@north_pacific_attire! Niwchen-Gemeinen-Beinbekleidung 2"
  PORTRAIT_MODIFIER_custom_special_crowns_crests_male_empty: "Keine"
  PORTRAIT_MODIFIER_custom_special_crowns_crests_female_empty: "Keine"
  PORTRAIT_MODIFIER_custom_special_crowns_crests_boy_empty: "Keine"

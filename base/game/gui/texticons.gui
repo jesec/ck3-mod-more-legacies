@@ -3943,6 +3943,36 @@ texticon = {
 }
 
 texticon = {
+	icon = north_pacific_attire
+	iconsize = {
+		texture = "gfx/interface/icons/dlc/dlc_025.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = east_asian_wonders
+	iconsize = {
+		texture = "gfx/interface/icons/dlc/dlc_026.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = celestial_court_attire
+	iconsize = {
+		texture = "gfx/interface/icons/dlc/dlc_027.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
 	icon = skills_icon
 	iconsize = {
 		texture = "gfx/interface/icons/icon_skills.dds"

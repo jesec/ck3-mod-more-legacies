@@ -1,25 +1,33 @@
 {
-  "version": "1.18.3.1",
+  "version": "1.18.4",
   "version_name": "Crane",
-  "updated": "2026-02-03T17:39:39.000Z",
+  "updated": "2026-03-04T11:44:16.000Z",
   "release_notes": {
-    "title": "Available Now: High Medieval Warfare Attire & Holy Buildings + Update 1.18.3",
-    "date": "2026-01-27",
-    "file": "release-notes/1_18_3_0_2026-01-27.md",
-    "url": "https://store.steampowered.com/news/app/1158310/view/534373212679572677"
+    "title": "Out Now: North Pacific Attire, East Asian Wonders, & Celestial Court Attire",
+    "date": "2026-03-11",
+    "file": "release-notes/1_18_4_0_2026-03-11.md",
+    "url": "https://store.steampowered.com/news/app/1158310/view/534377648529342527"
   },
   "depots": {
+    "228981": {
+      "manifest": "7613356809904826842",
+      "updated": "2013-10-10T21:04:57.000Z"
+    },
+    "228988": {
+      "manifest": "6645201662696499616",
+      "updated": "2022-05-04T21:41:13.000Z"
+    },
     "1158311": {
-      "manifest": "2704472122973790719",
-      "updated": "2026-02-03T17:36:52.000Z"
+      "manifest": "898637053609717566",
+      "updated": "2026-03-04T11:42:57.000Z"
     },
     "1158312": {
-      "manifest": "5440963949409772133",
-      "updated": "2026-02-03T17:38:13.000Z"
+      "manifest": "6187909801574663713",
+      "updated": "2026-03-04T11:44:16.000Z"
     },
     "1158315": {
-      "manifest": "3399665819714407029",
-      "updated": "2026-02-03T17:39:39.000Z"
+      "manifest": "3944603068272440229",
+      "updated": "2026-02-18T18:05:24.000Z"
     },
     "1296730": {
       "manifest": "4673314442703562503",
@@ -136,14 +144,29 @@
       "name": "Creator Pack: Arctic Attire"
     },
     "3315560": {
-      "manifest": "2643089646715188538",
-      "updated": "2026-01-19T16:46:36.000Z",
+      "manifest": "5111920289037265676",
+      "updated": "2026-01-13T19:44:43.000Z",
       "name": "Creator Pack: High Medieval Warfare Attire"
     },
     "3315570": {
-      "manifest": "8223058221075655587",
-      "updated": "2026-01-19T16:46:38.000Z",
+      "manifest": "409066589632915157",
+      "updated": "2026-02-18T22:50:04.000Z",
       "name": "Creator Pack: Holy Buildings"
+    },
+    "3315580": {
+      "manifest": "6705959764445437481",
+      "updated": "2026-02-18T22:50:07.000Z",
+      "name": "Creator Pack: North Pacific Attire"
+    },
+    "4232860": {
+      "manifest": "2743333143025069241",
+      "updated": "2026-02-18T22:50:11.000Z",
+      "name": "Creator Pack: East Asian Wonders"
+    },
+    "4232870": {
+      "manifest": "6970199339967430673",
+      "updated": "2026-02-18T22:50:14.000Z",
+      "name": "Creator Pack: Celestial Court Attire"
     }
   }
 }

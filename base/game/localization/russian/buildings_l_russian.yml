@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$Увеличение качества поддержанных [Concept( 'inspirations', 'вдохновений' )|E] #V ремесленников#!, #V оружейников#!, #V бронников#! и #V художественной ковки#!"
  royal_garden_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'royal_garden_effect_toto_desc', 'blank_line' )]"
  leisure_palace_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc' )]"
+ wedding_bonus_effect: "Увеличены награды за [Concept( 'activities', 'занятия' )|E] категории «[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName]» в этом [Concept( 'holding', 'владении' )|E]"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$Увеличены награды за [Concept( 'activities', 'занятия' )|E] категории «[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName]» в этом [Concept( 'holding', 'владении' )|E]"
  dragon_kiln_effect_desc: "Увеличение [Concept('opinion', 'мнения')|E] от действия $gift_interaction|V$: #P +50%#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\nУвеличены награды за [Concept( 'activities', 'занятия' )|E] категории «[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName]» в этом [Concept( 'holding', 'владении' )|E]"

@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$提高赞助的#V 工艺#!、#V 武器#!、#V 盔甲#!和#V 金属匠#![inspirations|E]的质量"
  royal_garden_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'royal_garden_effect_toto_desc', 'blank_line' )]"
  leisure_palace_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc' )]"
+ wedding_bonus_effect: "提高在该[holding|E]举办的[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName][activities|E]的奖励"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$提高在该[holding|E]举办的[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName][activities|E]的奖励"
  dragon_kiln_effect_desc: "$gift_interaction|V$提高的[opinion|E]：#P +50%#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\n提高在该[holding|E]举办的[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName][activities|E]的奖励"

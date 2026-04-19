@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$Zwiększona jakość ufundowanych [Concept( 'inspirations', 'inspiracji' )|E] #V rzemieślników#!, #V zbrojmistrzów#!, #V płatnerzy#! i #V złotników#!"
  royal_garden_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'royal_garden_effect_toto_desc', 'blank_line' )]"
  leisure_palace_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc' )]"
+ wedding_bonus_effect: "Zwiększone nagrody za zorganizowanie [activities|El] takich jak [GetActivityType('activity_wedding').GetTextIcon] [GetActivityType('activity_wedding').GetName|l] w tej [holdings|El]"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$Zwiększone nagrody za zorganizowanie [activities|El] takich jak [GetActivityType('activity_wedding').GetTextIcon] [GetActivityType('activity_wedding').GetName|l] w tej [holdings|El]"
  dragon_kiln_effect_desc: "Zysk [Concept('opinion', 'opinii')|E] za interakcję „$gift_interaction|V$”: #P +50%#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\nZwiększone nagrody za zorganizowanie [activities|El] [GetActivityType('activity_wedding').GetTextIcon] [GetActivityType('activity_wedding').GetName|l] w tej [holdings|El]"

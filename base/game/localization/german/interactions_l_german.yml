@@ -1064,7 +1064,7 @@
  char_interaction.0231.title: "Gerechtigkeit"
  char_interaction.0231.desc_prison: "[recipient.GetTitledFirstName] wurde festgesetzt und wartet nun sicher im Kerker weggesperrt auf [recipient.Custom('DE_PRO_POS_S_3P')] Schicksal."
  char_interaction.0231.desc_house_arrest: "Entsprechend meiner Befehle wurde [recipient.GetTitledFirstName] jetzt in [recipient.Custom('DE_PRO_POS_S_3P')]em Heim festgesetzt. Ich habe einige meiner Wachen angewiesen, dafür zu sorgen, dass [recipient.Custom('DE_PRO_PER_S_3P_N')|U] den Hausarrest einhält."
- char_interaction.0231.desc_stockade: "Entsprechend meiner Befehle wird [recipient.GetTitledFirstName] nun im Lagergefängnis festgesetzt, wo [recipient.Custom('DE_PRO_PER_S_3P_N')] auf [recipient.Custom('DE_PRO_POS_S_3P')] weiteres Schicksal wartet."
+ char_interaction.0231.desc_stockade: "Entsprechend meiner Befehle wird [recipient.GetTitledFirstName] nun im Gefängnis festgesetzt, wo [recipient.Custom('DE_PRO_PER_S_3P_N')] auf [recipient.Custom('DE_PRO_POS_S_3P')] weiteres Schicksal wartet."
  char_interaction.0231.a: "Gut."
  char_interaction.0232.desc: "Viel zu lange habe ich die Erniedrigungen durch [actor.GetTitledFirstName] ertragen.\n\n"
  char_interaction.0232.liege: "Ich werde nicht länger dulden, dass unser Lehnsherr [actor.Custom('DE_PRO_POS_S_3P')]e treuen Vasallen misshandelt. Bitte schließt Euch mir in dem Unterfangen an, diesen Tyrannen abzusetzen."

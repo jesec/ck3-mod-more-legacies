@@ -29,6 +29,18 @@ has_cp6_dlc_trigger = {
 	has_dlc_feature = holy_buildings
 }
 
+has_cp7_dlc_trigger = {
+	has_dlc_feature = north_pacific_attire
+}
+
+has_cp8_dlc_trigger = {
+	has_dlc_feature = east_asian_wonders
+}
+
+has_cp9_dlc_trigger = {
+	has_dlc_feature = celestial_court_attire
+}
+
 ##################################################
 # Booster Pack Triggers
 

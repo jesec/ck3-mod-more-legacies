@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$Aumento de la calidad de [inspirations|El] #V artesanas#!, #V de arma#!, #V de armadura#! y #V metaleras#! financiadas"
  royal_garden_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'royal_garden_effect_toto_desc', 'blank_line' )]"
  leisure_palace_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc' )]"
+ wedding_bonus_effect: "Recompensas aumentadas por las [activities|El] de [GetActivityType('activity_wedding').GetName|l] [GetActivityType('activity_wedding').GetTextIcon] que se celebren en esta [holding|El]"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$Recompensas aumentadas por las [activities|El] de [GetActivityType('activity_wedding').GetName|l] [GetActivityType('activity_wedding').GetTextIcon] que se celebren en esta [holding|El]"
  dragon_kiln_effect_desc: "Ganancia de [opinion|lE] por $gift_interaction|V$: #P +50 %#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\nRecompensas aumentadas por las [activities|El] de [GetActivityType('activity_wedding').GetName|l] [GetActivityType('activity_wedding').GetTextIcon] que se celebren en esta [holding|El]"

@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$후원 #V 기능공#!, #V 무기#!, #V 갑옷#!, #V 금속세공사#! [inspirations|E]의 품질 증가"
  royal_garden_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'royal_garden_effect_toto_desc', 'blank_line' )]"
  leisure_palace_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc' )]"
+ wedding_bonus_effect: "해당 [holding|E]에서 주최되는 [GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName] [activities|E]의 보상 증가"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$해당 [holding|E]에서 주최되는 [GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName] [activities|E]의 보상 증가"
  dragon_kiln_effect_desc: "$gift_interaction|V$로 받는 [opinion|E]: #P +50%#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\n해당 [holding|E]에서 주최되는 [GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName] [activities|E]의 보상 증가"

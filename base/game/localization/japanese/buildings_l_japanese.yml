@@ -999,6 +999,7 @@
  mines_roco_effect_desc: "$unlocks_building_desc$出資を受けた#V 工芸#!、#V 武器#!、#V 鎧#!、および#V 金工#! [inspirations|E]の品質が向上"
  royal_garden_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'royal_garden_effect_toto_desc', 'blank_line' )]"
  leisure_palace_effect_desc: "[SelectLocalization( HasDlcFeature( 'tours_and_tournaments' ), 'leisure_palace_effect_toto_desc', 'feast_cost_discount_max_desc' )]"
+ wedding_bonus_effect: "この[holding|E]で開催された[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName] [activities|E]の報酬が増加"
  royal_garden_effect_toto_desc: "$unlocks_building_desc$この[holding|E]で開催された[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName] [activities|E]の報酬が増加"
  dragon_kiln_effect_desc: "$gift_interaction|V$からの[opinion|E]獲得：#P +50%#!"
  leisure_palace_effect_toto_desc: "$feast_cost_discount_max_desc$\nこの[holding|E]で開催された[GetActivityType('activity_wedding').GetTextIcon][GetActivityType('activity_wedding').GetName] [activities|E]の報酬が増加"
