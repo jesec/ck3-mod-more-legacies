@@ -42,7 +42,7 @@ ck3-mod-more-legacies/
 │   └── README.md                           # User documentation (ships with mod)
 │
 ├── base/                                   # jesec/ck3-mod-base vanilla reference
-│   ├── game/                               # CK3 1.18.1.1 vanilla files
+│   ├── game/                               # CK3 1.18.4 vanilla files
 │   ├── scripts/                            # Build scripts
 │   └── docs/                               # Base system documentation
 │
