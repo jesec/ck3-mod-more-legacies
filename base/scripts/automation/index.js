@@ -190,18 +190,28 @@ async function checkUpdate(storedFilePath) {
     if (gid) liveDepots[key] = String(gid);
   }
 
-  // Depot-level diff. We only iterate over depots we've previously downloaded
-  // (present in stored). Comparing against live-only depots would cause a
-  // retrigger loop for depots our Steam account doesn't own or that are
-  // excluded by DepotDownloader's -os/-language filters: they'd never make
-  // it into stored, so they'd stay "new" in every PICS check.
+  // Depot-level diff. Three buckets per live depot:
+  //   - in stored with matching manifest  → no-op
+  //   - in stored with different manifest → changed (patch landed)
+  //   - in stored only (live removed it)  → changed (deprecated)
+  //   - live-only AND in known_unowned    → ignored (filtered/unowned, stable)
+  //   - live-only AND NOT in known_unowned → changed (possible ownership gain)
+  //
+  // known_unowned_depots is populated by parse() after each download: any
+  // depot PICS reports for the app but DepotDownloader didn't produce a
+  // manifest for (unowned DLC, filtered by -os/-language, etc.). This breaks
+  // the retrigger loop: depots we can't download get recorded once; only
+  // genuinely new depots (e.g. a DLC you just bought) trigger an update.
   //
   // Exception: on a first run (empty stored), treat every live depot as
-  // "changed" so the repo gets seeded. Subsequent runs learn which depots
-  // we actually own from what DD managed to download.
+  // "changed" so the repo gets seeded. parse() then populates both stored
+  // and known_unowned from the download result.
   const firstRun = Object.keys(storedDepots).length === 0;
+  const knownUnowned = new Set(
+    Array.isArray(stored.known_unowned_depots) ? stored.known_unowned_depots.map(String) : []
+  );
   const changed = [];
-  const liveOnlyDepots = [];
+  const liveOnlyIgnored = [];
 
   for (const id of Object.keys(storedDepots)) {
     const s = storedDepots[id]?.manifest != null ? String(storedDepots[id].manifest) : null;
@@ -212,8 +222,14 @@ async function checkUpdate(storedFilePath) {
     if (id in storedDepots) continue;
     if (firstRun) {
       changed.push({ id, stored: null, live: liveDepots[id] });
+    } else if (knownUnowned.has(id)) {
+      liveOnlyIgnored.push({ id, live: liveDepots[id] });
     } else {
-      liveOnlyDepots.push({ id, live: liveDepots[id] });
+      // New depot, never-before-seen. Could be: (a) DLC we just purchased,
+      // (b) new Paradox content depot, (c) DLC PICS exposed before the
+      // workflow's Steam account gained access. Trigger — parse() will
+      // classify it correctly on the next run.
+      changed.push({ id, stored: null, live: liveDepots[id] });
     }
   }
 
@@ -245,9 +261,9 @@ async function checkUpdate(storedFilePath) {
   for (const { id, stored: s, live: l } of changed) {
     console.log(`     depot ${id}: ${s ?? '(new)'} → ${l ?? '(removed)'}`);
   }
-  if (liveOnlyDepots.length > 0) {
-    const list = liveOnlyDepots.map(d => d.id).join(', ');
-    console.log(`   live-only depots (informational, not triggering): ${list}`);
+  if (liveOnlyIgnored.length > 0) {
+    const list = liveOnlyIgnored.map(d => d.id).join(', ');
+    console.log(`   live-only depots in known_unowned (ignored): ${list}`);
   }
   if (intermediateVersions.length > 0) {
     console.log(`   intermediate branches to backfill: ${intermediateVersions.join(', ')}`);
@@ -679,6 +695,28 @@ ${markdown}
   const date = dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0];
   const url = urlMatch ? urlMatch[1] : '';
 
+  // Compute known_unowned_depots: depots PICS reports for this app that DD
+  // did NOT produce a manifest for. These are either unowned DLCs or depots
+  // filtered out by -os/-language flags. Recording them here keeps the next
+  // check() from flagging them as "new" every run.
+  let knownUnowned = [];
+  try {
+    console.log('🔍 Reconciling live depot list against what was downloaded...');
+    const appinfo = await fetchPicsAppInfo(Number(CK3_APP_ID));
+    const liveDepotIds = Object.keys(appinfo.depots || {}).filter(k => /^\d+$/.test(k));
+    knownUnowned = liveDepotIds
+      .filter(id => !(id in depots))
+      .sort((a, b) => Number(a) - Number(b));
+    if (knownUnowned.length > 0) {
+      console.log(`   ${knownUnowned.length} live depot(s) recorded as known_unowned: ${knownUnowned.join(', ')}`);
+    } else {
+      console.log('   No live depots outside the downloaded set.');
+    }
+  } catch (err) {
+    console.error(`⚠️  Could not fetch PICS to compute known_unowned_depots: ${err.message}`);
+    console.error('   .ck3-version.json will omit known_unowned_depots; next check may re-flag unowned depots.');
+  }
+
   const metadata = {
     version: version,
     ...(versionName && { version_name: versionName }),
@@ -689,7 +727,8 @@ ${markdown}
       file: `release-notes/${currentReleaseNotesFile}`,
       url: url
     },
-    depots: depots
+    depots: depots,
+    ...(knownUnowned.length > 0 && { known_unowned_depots: knownUnowned })
   };
 
   const metadataPath = path.join(outputDir, '.ck3-version.json');
