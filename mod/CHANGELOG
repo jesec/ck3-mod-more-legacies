@@ -1,3 +1,7 @@
+v2.0.2
+Updated for CK3 1.19 "Scribe" compatibility.
+Clean merge (mod never modifies base/). All 33 tradition references, 5 ethos references preserved.
+
 v2.0.1
 Updated for CK3 1.18.4 compatibility (bumped through 1.18.2, 1.18.3).
 No conflicts with mod files. All 33 tradition references, 5 ethos references

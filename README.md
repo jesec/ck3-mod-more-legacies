@@ -42,7 +42,7 @@ ck3-mod-more-legacies/
 │   └── README.md                           # User documentation (ships with mod)
 │
 ├── base/                                   # jesec/ck3-mod-base vanilla reference
-│   ├── game/                               # CK3 1.18.4 vanilla files
+│   ├── game/                               # CK3 1.19.0.3 vanilla files
 │   ├── scripts/                            # Build scripts
 │   └── docs/                               # Base system documentation
 │
@@ -118,7 +118,7 @@ bash install.sh
 
 ### Version Compatibility
 
-**Current version:** CK3 1.18.* (Crane)
+**Current version:** CK3 1.19.* (Scribe)
 
 **Key systems to verify when updating CK3 versions:**
 - Prestige/piety level thresholds (`base/game/common/defines/00_defines.txt` lines 154-161)

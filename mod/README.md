@@ -148,7 +148,7 @@ Each legacy has 5 perks (10 legacies × 5 perks = 50 total).
 
 ## Technical Information
 
-**CK3 Version:** 1.18.* (Crane)
+**CK3 Version:** 1.19.* (Scribe)
 
 **Mod Version:** 2.0
 
