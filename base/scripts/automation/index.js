@@ -695,16 +695,37 @@ ${markdown}
   const date = dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0];
   const url = urlMatch ? urlMatch[1] : '';
 
-  // Compute known_unowned_depots: depots PICS reports for this app that DD
-  // did NOT produce a manifest for. These are either unowned DLCs or depots
-  // filtered out by -os/-language flags. Recording them here keeps the next
-  // check() from flagging them as "new" every run.
+  // Reconcile the downloaded depot set against Steam's PICS public-branch
+  // depot declaration for this app. Two things happen here:
+  //   1. Drop any downloaded depot that PICS doesn't list for the app.
+  //      DepotDownloader pulls shared Steamworks redist depots (e.g. 228981,
+  //      228988) alongside the app's own depots; these aren't CK3 content,
+  //      they're Steam-SDK runtime data, and they don't belong in stored —
+  //      keeping them there causes a persistent "changed (removed)" signal
+  //      every run because PICS never lists them.
+  //   2. Compute known_unowned_depots = PICS live set − downloaded set. These
+  //      are CK3 depots the workflow's Steam account doesn't own, or that
+  //      DepotDownloader's -os/-language filters exclude. Recording them
+  //      prevents the check() loop from re-flagging them as "new" each run.
   let knownUnowned = [];
   try {
     console.log('🔍 Reconciling live depot list against what was downloaded...');
     const appinfo = await fetchPicsAppInfo(Number(CK3_APP_ID));
-    const liveDepotIds = Object.keys(appinfo.depots || {}).filter(k => /^\d+$/.test(k));
-    knownUnowned = liveDepotIds
+    const liveDepotIds = new Set(Object.keys(appinfo.depots || {}).filter(k => /^\d+$/.test(k)));
+
+    // Filter downloaded depots against PICS
+    const dropped = [];
+    for (const id of Object.keys(depots)) {
+      if (!liveDepotIds.has(id)) {
+        dropped.push(id);
+        delete depots[id];
+      }
+    }
+    if (dropped.length > 0) {
+      console.log(`   Dropped ${dropped.length} downloaded depot(s) not in PICS (shared Steam SDK): ${dropped.join(', ')}`);
+    }
+
+    knownUnowned = Array.from(liveDepotIds)
       .filter(id => !(id in depots))
       .sort((a, b) => Number(a) - Number(b));
     if (knownUnowned.length > 0) {
@@ -713,8 +734,8 @@ ${markdown}
       console.log('   No live depots outside the downloaded set.');
     }
   } catch (err) {
-    console.error(`⚠️  Could not fetch PICS to compute known_unowned_depots: ${err.message}`);
-    console.error('   .ck3-version.json will omit known_unowned_depots; next check may re-flag unowned depots.');
+    console.error(`⚠️  Could not fetch PICS to reconcile depots: ${err.message}`);
+    console.error('   .ck3-version.json will omit known_unowned_depots and keep DD\'s full depot set.');
   }
 
   const metadata = {
