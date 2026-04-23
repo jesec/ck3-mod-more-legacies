@@ -1,25 +1,33 @@
 {
-  "version": "1.19.0.3",
+  "version": "1.19.0.4",
   "version_name": "Scribe",
-  "updated": "2026-04-15T06:56:00.000Z",
+  "updated": "2026-04-21T16:51:40.000Z",
   "release_notes": {
-    "title": "1.19 \"Scribe\" Update - Available Now",
-    "date": "2026-04-20",
-    "file": "release-notes/1_19_0_0_2026-04-20.md",
-    "url": "https://store.steampowered.com/news/app/1158310/view/552395313313219108"
+    "title": "1.19.0.4",
+    "date": "2026-04-23",
+    "file": "release-notes/1_19_0_4_2026-04-23.md",
+    "url": "https://store.steampowered.com/news/app/1158310/view/526500154372522432"
   },
   "depots": {
+    "228981": {
+      "manifest": "7613356809904826842",
+      "updated": "2013-10-10T21:04:57.000Z"
+    },
+    "228988": {
+      "manifest": "6645201662696499616",
+      "updated": "2022-05-04T21:41:13.000Z"
+    },
     "1158311": {
-      "manifest": "8827815058408290475",
-      "updated": "2026-04-14T23:51:55.000Z"
+      "manifest": "4718909281280039965",
+      "updated": "2026-04-21T16:49:42.000Z"
     },
     "1158312": {
-      "manifest": "2869489218510308348",
-      "updated": "2026-04-14T23:53:47.000Z"
+      "manifest": "6847876617598301174",
+      "updated": "2026-04-21T16:51:40.000Z"
     },
     "1158315": {
-      "manifest": "1790161383438836713",
-      "updated": "2026-04-14T23:56:22.000Z"
+      "manifest": "8355345534666421034",
+      "updated": "2026-04-20T18:12:34.000Z"
     },
     "1296730": {
       "manifest": "4673314442703562503",
@@ -151,8 +159,8 @@
       "name": "Creator Pack: North Pacific Attire"
     },
     "3315590": {
-      "manifest": "8046445785273377193",
-      "updated": "2026-04-15T06:56:00.000Z",
+      "manifest": "867193425775422940",
+      "updated": "2026-04-09T20:10:35.000Z",
       "name": "Songs of the Realm"
     },
     "4232860": {
@@ -166,8 +174,8 @@
       "name": "Creator Pack: Celestial Court Attire"
     },
     "4232890": {
-      "manifest": "9211152866378443319",
-      "updated": "2026-04-15T06:55:56.000Z",
+      "manifest": "6242168399361031321",
+      "updated": "2026-04-09T20:10:31.000Z",
       "name": "Symbols of Authority"
     }
   },
