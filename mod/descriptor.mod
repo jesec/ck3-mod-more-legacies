@@ -1,4 +1,4 @@
-version="2.0.2"
+version="2.0.3"
 supported_version="1.19.*"
 name="More Legacies"
 tags={
